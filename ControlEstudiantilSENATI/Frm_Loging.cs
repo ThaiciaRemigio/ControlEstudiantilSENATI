@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ControlEstudiantilSENATI
 {
-    public partial class Form1 : Form
+    public partial class Frm_Loging : Form
     {
-        public Form1()
+        public Frm_Loging()
         {
             InitializeComponent();
         }
@@ -23,6 +23,11 @@ namespace ControlEstudiantilSENATI
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
