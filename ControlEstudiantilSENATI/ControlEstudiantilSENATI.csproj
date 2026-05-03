@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_Loging.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Loging.Designer.cs">
-      <DependentUpon>Frm_Loging.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,9 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_Loging.resx">
-      <DependentUpon>Frm_Loging.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_MenuPrincipal.resx">
       <DependentUpon>Frm_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
