@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1 Estudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1 Estudiante.Designer.cs">
+      <DependentUpon>Form1 Estudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
