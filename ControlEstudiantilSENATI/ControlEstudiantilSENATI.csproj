@@ -55,6 +55,18 @@
     <Compile Include="Form2 Matricula.Designer.cs">
       <DependentUpon>Form2 Matricula.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3 Apoderados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3 Apoderados.Designer.cs">
+      <DependentUpon>Form3 Apoderados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4 Horario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4 Horario.Designer.cs">
+      <DependentUpon>Form4 Horario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulario\Form1 Estudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form2 Matricula.resx">
       <DependentUpon>Form2 Matricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3 Apoderados.resx">
+      <DependentUpon>Form3 Apoderados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4 Horario.resx">
+      <DependentUpon>Form4 Horario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario\Form1 Estudiante.resx">
       <DependentUpon>Form1 Estudiante.cs</DependentUpon>

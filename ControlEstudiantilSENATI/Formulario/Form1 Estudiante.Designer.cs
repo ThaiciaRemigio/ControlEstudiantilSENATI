@@ -63,16 +63,16 @@
             this.BTNGUARDAR = new System.Windows.Forms.Button();
             this.BTNMODIFICAR = new System.Windows.Forms.Button();
             this.BTNELIMINAR = new System.Windows.Forms.Button();
-            this.PanelEstudiantes = new System.Windows.Forms.DataGridView();
+            this.dgvEstudiantes = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbGenero = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtEstudiante = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.BTNBUSCAR = new System.Windows.Forms.Button();
+            this.BTNCERRAR = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PanelEstudiantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +90,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbGenero);
             this.groupBox1.Controls.Add(this.BTNMOSTRAR);
             this.groupBox1.Controls.Add(this.txtCorreo2);
             this.groupBox1.Controls.Add(this.txtCorreo1);
@@ -417,13 +417,13 @@
             this.BTNELIMINAR.Text = "ELIMINAR";
             this.BTNELIMINAR.UseVisualStyleBackColor = false;
             // 
-            // PanelEstudiantes
+            // dgvEstudiantes
             // 
-            this.PanelEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PanelEstudiantes.Location = new System.Drawing.Point(12, 472);
-            this.PanelEstudiantes.Name = "PanelEstudiantes";
-            this.PanelEstudiantes.Size = new System.Drawing.Size(1059, 212);
-            this.PanelEstudiantes.TabIndex = 3;
+            this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEstudiantes.Location = new System.Drawing.Point(12, 472);
+            this.dgvEstudiantes.Name = "dgvEstudiantes";
+            this.dgvEstudiantes.Size = new System.Drawing.Size(1059, 212);
+            this.dgvEstudiantes.TabIndex = 3;
             // 
             // panel1
             // 
@@ -434,18 +434,18 @@
             this.panel1.Size = new System.Drawing.Size(1082, 34);
             this.panel1.TabIndex = 4;
             // 
-            // comboBox1
+            // cmbGenero
             // 
-            this.comboBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbGenero.ForeColor = System.Drawing.Color.DarkGray;
+            this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Items.AddRange(new object[] {
             "Femenino.",
             "Masculino."});
-            this.comboBox1.Location = new System.Drawing.Point(495, 35);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(217, 24);
-            this.comboBox1.TabIndex = 29;
-            this.comboBox1.Text = "                  <<Seleccionar>> ";
+            this.cmbGenero.Location = new System.Drawing.Point(495, 35);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(217, 24);
+            this.cmbGenero.TabIndex = 29;
+            this.cmbGenero.Text = "                  <<Seleccionar>> ";
             // 
             // label16
             // 
@@ -464,28 +464,28 @@
             this.txtEstudiante.Size = new System.Drawing.Size(392, 20);
             this.txtEstudiante.TabIndex = 6;
             // 
-            // button6
+            // BTNBUSCAR
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(828, 431);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(119, 35);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "BUSCAR";
-            this.button6.UseVisualStyleBackColor = false;
+            this.BTNBUSCAR.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTNBUSCAR.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNBUSCAR.Location = new System.Drawing.Point(828, 431);
+            this.BTNBUSCAR.Name = "BTNBUSCAR";
+            this.BTNBUSCAR.Size = new System.Drawing.Size(119, 35);
+            this.BTNBUSCAR.TabIndex = 7;
+            this.BTNBUSCAR.Text = "BUSCAR";
+            this.BTNBUSCAR.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // BTNCERRAR
             // 
-            this.button7.BackColor = System.Drawing.Color.Navy;
-            this.button7.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(909, 690);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(153, 49);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "CERRAR";
-            this.button7.UseVisualStyleBackColor = false;
+            this.BTNCERRAR.BackColor = System.Drawing.Color.Navy;
+            this.BTNCERRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNCERRAR.ForeColor = System.Drawing.Color.White;
+            this.BTNCERRAR.Location = new System.Drawing.Point(909, 690);
+            this.BTNCERRAR.Name = "BTNCERRAR";
+            this.BTNCERRAR.Size = new System.Drawing.Size(153, 49);
+            this.BTNCERRAR.TabIndex = 8;
+            this.BTNCERRAR.Text = "CERRAR";
+            this.BTNCERRAR.UseVisualStyleBackColor = false;
             // 
             // Form1_Estudiante
             // 
@@ -493,12 +493,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1083, 749);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.BTNCERRAR);
+            this.Controls.Add(this.BTNBUSCAR);
             this.Controls.Add(this.txtEstudiante);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.PanelEstudiantes);
+            this.Controls.Add(this.dgvEstudiantes);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1_Estudiante";
@@ -506,7 +506,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PanelEstudiantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -551,12 +551,12 @@
         private System.Windows.Forms.Button BTNMODIFICAR;
         private System.Windows.Forms.Button BTNGUARDAR;
         private System.Windows.Forms.Button BTNNUEVO;
-        private System.Windows.Forms.DataGridView PanelEstudiantes;
+        private System.Windows.Forms.DataGridView dgvEstudiantes;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbGenero;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtEstudiante;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button BTNBUSCAR;
+        private System.Windows.Forms.Button BTNCERRAR;
     }
 }
