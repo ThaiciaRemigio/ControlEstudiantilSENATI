@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1 Estudiante.cs">
+    <Compile Include="Formulario\Form1 Estudiante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1 Estudiante.Designer.cs">
+    <Compile Include="Formulario\Form1 Estudiante.Designer.cs">
       <DependentUpon>Form1 Estudiante.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_MenuPrincipal.cs">
@@ -60,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formulario\Form1 Estudiante.resx">
+      <DependentUpon>Form1 Estudiante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_MenuPrincipal.resx">
       <DependentUpon>Frm_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
