@@ -82,11 +82,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(376, 19);
+            this.label1.Location = new System.Drawing.Point(328, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 23);
+            this.label1.Size = new System.Drawing.Size(410, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "REGISTRO PARA ESTUDIANTES";
             // 
@@ -123,7 +123,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 60);
+            this.groupBox1.Location = new System.Drawing.Point(12, 72);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1059, 280);
             this.groupBox1.TabIndex = 1;
@@ -384,7 +384,7 @@
             this.groupBox2.Controls.Add(this.BTNGUARDAR);
             this.groupBox2.Controls.Add(this.BTNNUEVO);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 356);
+            this.groupBox2.Location = new System.Drawing.Point(12, 368);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1059, 85);
             this.groupBox2.TabIndex = 2;
@@ -443,7 +443,7 @@
             // dgvEstudiantes
             // 
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstudiantes.Location = new System.Drawing.Point(12, 492);
+            this.dgvEstudiantes.Location = new System.Drawing.Point(12, 504);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
             this.dgvEstudiantes.Size = new System.Drawing.Size(1059, 212);
             this.dgvEstudiantes.TabIndex = 3;
@@ -456,14 +456,14 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1082, 54);
+            this.panel1.Size = new System.Drawing.Size(1082, 66);
             this.panel1.TabIndex = 4;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(259, 458);
+            this.label16.Location = new System.Drawing.Point(259, 470);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(140, 16);
             this.label16.TabIndex = 5;
@@ -472,7 +472,7 @@
             // 
             // txtEstudiante
             // 
-            this.txtEstudiante.Location = new System.Drawing.Point(430, 458);
+            this.txtEstudiante.Location = new System.Drawing.Point(430, 470);
             this.txtEstudiante.Name = "txtEstudiante";
             this.txtEstudiante.Size = new System.Drawing.Size(392, 20);
             this.txtEstudiante.TabIndex = 6;
@@ -482,7 +482,7 @@
             // 
             this.BTNBUSCAR.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTNBUSCAR.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNBUSCAR.Location = new System.Drawing.Point(828, 451);
+            this.BTNBUSCAR.Location = new System.Drawing.Point(828, 463);
             this.BTNBUSCAR.Name = "BTNBUSCAR";
             this.BTNBUSCAR.Size = new System.Drawing.Size(119, 35);
             this.BTNBUSCAR.TabIndex = 7;
@@ -495,7 +495,7 @@
             this.BTNCERRAR.BackColor = System.Drawing.Color.Navy;
             this.BTNCERRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCERRAR.ForeColor = System.Drawing.Color.White;
-            this.BTNCERRAR.Location = new System.Drawing.Point(905, 710);
+            this.BTNCERRAR.Location = new System.Drawing.Point(918, 731);
             this.BTNCERRAR.Name = "BTNCERRAR";
             this.BTNCERRAR.Size = new System.Drawing.Size(153, 49);
             this.BTNCERRAR.TabIndex = 8;
@@ -506,9 +506,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(22, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 51);
+            this.pictureBox1.Size = new System.Drawing.Size(76, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -518,7 +518,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1084, 757);
+            this.ClientSize = new System.Drawing.Size(1084, 783);
             this.Controls.Add(this.BTNCERRAR);
             this.Controls.Add(this.BTNBUSCAR);
             this.Controls.Add(this.txtEstudiante);

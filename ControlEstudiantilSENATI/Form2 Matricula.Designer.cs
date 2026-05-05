@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2_Matricula));
             this.label1 = new System.Windows.Forms.Label();
             this.BTNCERRAR = new System.Windows.Forms.Button();
             this.BTNBUSCAR = new System.Windows.Forms.Button();
@@ -64,20 +65,22 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatricula)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(342, 8);
+            this.label1.Location = new System.Drawing.Point(281, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 23);
+            this.label1.Size = new System.Drawing.Size(389, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "REGISTRO PARA MATRICULA";
             // 
@@ -86,7 +89,7 @@
             this.BTNCERRAR.BackColor = System.Drawing.Color.Navy;
             this.BTNCERRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCERRAR.ForeColor = System.Drawing.Color.White;
-            this.BTNCERRAR.Location = new System.Drawing.Point(817, 691);
+            this.BTNCERRAR.Location = new System.Drawing.Point(817, 734);
             this.BTNCERRAR.Name = "BTNCERRAR";
             this.BTNCERRAR.Size = new System.Drawing.Size(153, 49);
             this.BTNCERRAR.TabIndex = 16;
@@ -97,7 +100,7 @@
             // 
             this.BTNBUSCAR.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTNBUSCAR.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNBUSCAR.Location = new System.Drawing.Point(749, 447);
+            this.BTNBUSCAR.Location = new System.Drawing.Point(749, 490);
             this.BTNBUSCAR.Name = "BTNBUSCAR";
             this.BTNBUSCAR.Size = new System.Drawing.Size(119, 35);
             this.BTNBUSCAR.TabIndex = 15;
@@ -106,7 +109,7 @@
             // 
             // txtMatriculas
             // 
-            this.txtMatriculas.Location = new System.Drawing.Point(335, 454);
+            this.txtMatriculas.Location = new System.Drawing.Point(335, 497);
             this.txtMatriculas.Name = "txtMatriculas";
             this.txtMatriculas.Size = new System.Drawing.Size(392, 20);
             this.txtMatriculas.TabIndex = 14;
@@ -115,7 +118,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(170, 456);
+            this.label16.Location = new System.Drawing.Point(170, 499);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(140, 16);
             this.label16.TabIndex = 13;
@@ -124,16 +127,17 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1082, 34);
+            this.panel1.Size = new System.Drawing.Size(981, 68);
             this.panel1.TabIndex = 12;
             // 
             // dgvMatricula
             // 
             this.dgvMatricula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMatricula.Location = new System.Drawing.Point(12, 488);
+            this.dgvMatricula.Location = new System.Drawing.Point(12, 531);
             this.dgvMatricula.Name = "dgvMatricula";
             this.dgvMatricula.Size = new System.Drawing.Size(958, 197);
             this.dgvMatricula.TabIndex = 11;
@@ -146,7 +150,7 @@
             this.groupBox2.Controls.Add(this.BTNGUARDAR);
             this.groupBox2.Controls.Add(this.BTNNUEVO);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 356);
+            this.groupBox2.Location = new System.Drawing.Point(12, 399);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(958, 85);
             this.groupBox2.TabIndex = 10;
@@ -224,7 +228,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 41);
+            this.groupBox1.Location = new System.Drawing.Point(12, 84);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(958, 309);
             this.groupBox1.TabIndex = 9;
@@ -421,11 +425,22 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "ID Matricula : ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(11, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(78, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form2_Matricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 761);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(982, 793);
             this.Controls.Add(this.BTNCERRAR);
             this.Controls.Add(this.BTNBUSCAR);
             this.Controls.Add(this.txtMatriculas);
@@ -442,6 +457,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -485,5 +501,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

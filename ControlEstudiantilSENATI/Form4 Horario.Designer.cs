@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4_Horario));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtAula = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtHoraInicio = new System.Windows.Forms.TextBox();
             this.BTNMOSTRAR = new System.Windows.Forms.Button();
             this.txtPabellon = new System.Windows.Forms.TextBox();
@@ -56,31 +59,32 @@
             this.BTNMODIFICAR = new System.Windows.Forms.Button();
             this.BTNGUARDAR = new System.Windows.Forms.Button();
             this.BTNNUEVO = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtAula = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHorario)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-3, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1082, 34);
+            this.panel1.Size = new System.Drawing.Size(981, 63);
             this.panel1.TabIndex = 28;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(364, 8);
+            this.label1.Location = new System.Drawing.Point(295, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 23);
+            this.label1.Size = new System.Drawing.Size(356, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "REGISTRO PARA HORARIO\r\n";
             // 
@@ -105,12 +109,26 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(8, 40);
+            this.groupBox1.Location = new System.Drawing.Point(7, 79);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(958, 208);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Frm_Horario";
+            // 
+            // txtAula
+            // 
+            this.txtAula.Location = new System.Drawing.Point(532, 158);
+            this.txtAula.Name = "txtAula";
+            this.txtAula.Size = new System.Drawing.Size(217, 23);
+            this.txtAula.TabIndex = 34;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(152, 159);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(217, 23);
+            this.dateTimePicker1.TabIndex = 33;
             // 
             // txtHoraInicio
             // 
@@ -244,7 +262,7 @@
             this.BTNCERRAR.BackColor = System.Drawing.Color.Navy;
             this.BTNCERRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCERRAR.ForeColor = System.Drawing.Color.White;
-            this.BTNCERRAR.Location = new System.Drawing.Point(813, 599);
+            this.BTNCERRAR.Location = new System.Drawing.Point(812, 638);
             this.BTNCERRAR.Name = "BTNCERRAR";
             this.BTNCERRAR.Size = new System.Drawing.Size(153, 49);
             this.BTNCERRAR.TabIndex = 32;
@@ -255,7 +273,7 @@
             // 
             this.BTNBUSCAR.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTNBUSCAR.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNBUSCAR.Location = new System.Drawing.Point(749, 355);
+            this.BTNBUSCAR.Location = new System.Drawing.Point(748, 394);
             this.BTNBUSCAR.Name = "BTNBUSCAR";
             this.BTNBUSCAR.Size = new System.Drawing.Size(119, 35);
             this.BTNBUSCAR.TabIndex = 31;
@@ -264,7 +282,7 @@
             // 
             // txtHorario
             // 
-            this.txtHorario.Location = new System.Drawing.Point(335, 362);
+            this.txtHorario.Location = new System.Drawing.Point(334, 401);
             this.txtHorario.Name = "txtHorario";
             this.txtHorario.Size = new System.Drawing.Size(392, 20);
             this.txtHorario.TabIndex = 30;
@@ -273,7 +291,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(170, 364);
+            this.label16.Location = new System.Drawing.Point(169, 403);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(140, 16);
             this.label16.TabIndex = 29;
@@ -282,7 +300,7 @@
             // dgvHorario
             // 
             this.dgvHorario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHorario.Location = new System.Drawing.Point(8, 396);
+            this.dgvHorario.Location = new System.Drawing.Point(7, 435);
             this.dgvHorario.Name = "dgvHorario";
             this.dgvHorario.Size = new System.Drawing.Size(962, 197);
             this.dgvHorario.TabIndex = 27;
@@ -295,7 +313,7 @@
             this.groupBox2.Controls.Add(this.BTNGUARDAR);
             this.groupBox2.Controls.Add(this.BTNNUEVO);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 264);
+            this.groupBox2.Location = new System.Drawing.Point(11, 303);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(958, 85);
             this.groupBox2.TabIndex = 26;
@@ -346,25 +364,21 @@
             this.BTNNUEVO.Text = "NUEVO";
             this.BTNNUEVO.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
+            // pictureBox1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(152, 159);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(217, 23);
-            this.dateTimePicker1.TabIndex = 33;
-            // 
-            // txtAula
-            // 
-            this.txtAula.Location = new System.Drawing.Point(532, 158);
-            this.txtAula.Name = "txtAula";
-            this.txtAula.Size = new System.Drawing.Size(217, 23);
-            this.txtAula.TabIndex = 34;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(14, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(91, 63);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Form4_Horario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(977, 654);
+            this.ClientSize = new System.Drawing.Size(977, 710);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BTNCERRAR);
@@ -381,6 +395,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHorario)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,5 +432,6 @@
         private System.Windows.Forms.Button BTNNUEVO;
         private System.Windows.Forms.TextBox txtAula;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

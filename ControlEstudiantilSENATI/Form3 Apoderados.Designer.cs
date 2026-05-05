@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3_Apoderados));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.BTNCERRAR = new System.Windows.Forms.Button();
@@ -41,6 +42,8 @@
             this.BTNGUARDAR = new System.Windows.Forms.Button();
             this.BTNNUEVO = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbGenero = new System.Windows.Forms.ComboBox();
+            this.txtDireccionActual = new System.Windows.Forms.TextBox();
             this.BTNMOSTRAR = new System.Windows.Forms.Button();
             this.txtOtroContacto = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
@@ -56,31 +59,32 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDireccionActual = new System.Windows.Forms.TextBox();
-            this.cmbGenero = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApoderado)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1082, 34);
+            this.panel1.Size = new System.Drawing.Size(987, 65);
             this.panel1.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(364, 8);
+            this.label1.Location = new System.Drawing.Point(291, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 23);
+            this.label1.Size = new System.Drawing.Size(413, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "REGISTRO PARA APODERADOS";
             // 
@@ -89,7 +93,7 @@
             this.BTNCERRAR.BackColor = System.Drawing.Color.Navy;
             this.BTNCERRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCERRAR.ForeColor = System.Drawing.Color.White;
-            this.BTNCERRAR.Location = new System.Drawing.Point(817, 601);
+            this.BTNCERRAR.Location = new System.Drawing.Point(821, 645);
             this.BTNCERRAR.Name = "BTNCERRAR";
             this.BTNCERRAR.Size = new System.Drawing.Size(153, 49);
             this.BTNCERRAR.TabIndex = 24;
@@ -100,7 +104,7 @@
             // 
             this.BTNBUSCAR.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTNBUSCAR.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNBUSCAR.Location = new System.Drawing.Point(753, 357);
+            this.BTNBUSCAR.Location = new System.Drawing.Point(757, 401);
             this.BTNBUSCAR.Name = "BTNBUSCAR";
             this.BTNBUSCAR.Size = new System.Drawing.Size(119, 35);
             this.BTNBUSCAR.TabIndex = 23;
@@ -109,7 +113,7 @@
             // 
             // txtMatriculas
             // 
-            this.txtMatriculas.Location = new System.Drawing.Point(339, 364);
+            this.txtMatriculas.Location = new System.Drawing.Point(343, 408);
             this.txtMatriculas.Name = "txtMatriculas";
             this.txtMatriculas.Size = new System.Drawing.Size(392, 20);
             this.txtMatriculas.TabIndex = 22;
@@ -118,7 +122,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(174, 366);
+            this.label16.Location = new System.Drawing.Point(178, 410);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(140, 16);
             this.label16.TabIndex = 21;
@@ -127,7 +131,7 @@
             // dgvApoderado
             // 
             this.dgvApoderado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvApoderado.Location = new System.Drawing.Point(12, 398);
+            this.dgvApoderado.Location = new System.Drawing.Point(16, 442);
             this.dgvApoderado.Name = "dgvApoderado";
             this.dgvApoderado.Size = new System.Drawing.Size(962, 197);
             this.dgvApoderado.TabIndex = 19;
@@ -140,7 +144,7 @@
             this.groupBox2.Controls.Add(this.BTNGUARDAR);
             this.groupBox2.Controls.Add(this.BTNNUEVO);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(16, 266);
+            this.groupBox2.Location = new System.Drawing.Point(20, 310);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(958, 85);
             this.groupBox2.TabIndex = 18;
@@ -212,12 +216,29 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 42);
+            this.groupBox1.Location = new System.Drawing.Point(16, 86);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(958, 208);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Frm_Apoderado";
+            // 
+            // cmbGenero
+            // 
+            this.cmbGenero.ForeColor = System.Drawing.Color.Gray;
+            this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Location = new System.Drawing.Point(532, 158);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(217, 24);
+            this.cmbGenero.TabIndex = 32;
+            this.cmbGenero.Text = "                <<Seleccione>>";
+            // 
+            // txtDireccionActual
+            // 
+            this.txtDireccionActual.Location = new System.Drawing.Point(533, 32);
+            this.txtDireccionActual.Name = "txtDireccionActual";
+            this.txtDireccionActual.Size = new System.Drawing.Size(217, 23);
+            this.txtDireccionActual.TabIndex = 31;
             // 
             // BTNMOSTRAR
             // 
@@ -346,28 +367,22 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "ID Apoderado : ";
             // 
-            // txtDireccionActual
+            // pictureBox1
             // 
-            this.txtDireccionActual.Location = new System.Drawing.Point(533, 32);
-            this.txtDireccionActual.Name = "txtDireccionActual";
-            this.txtDireccionActual.Size = new System.Drawing.Size(217, 23);
-            this.txtDireccionActual.TabIndex = 31;
-            // 
-            // cmbGenero
-            // 
-            this.cmbGenero.ForeColor = System.Drawing.Color.Gray;
-            this.cmbGenero.FormattingEnabled = true;
-            this.cmbGenero.Location = new System.Drawing.Point(532, 158);
-            this.cmbGenero.Name = "cmbGenero";
-            this.cmbGenero.Size = new System.Drawing.Size(217, 24);
-            this.cmbGenero.TabIndex = 32;
-            this.cmbGenero.Text = "                <<Seleccione>>";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(11, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(92, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
             // 
             // Form3_Apoderados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(986, 651);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(986, 708);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BTNCERRAR);
             this.Controls.Add(this.BTNBUSCAR);
@@ -384,6 +399,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -421,5 +437,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDireccionActual;
         private System.Windows.Forms.ComboBox cmbGenero;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
