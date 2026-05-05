@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\Conexion.cs" />
+    <Compile Include="Datos\EstudianteDAL.cs" />
+    <Compile Include="Entidades\Estudiante.cs" />
     <Compile Include="Formulario\Form1 Estudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,5 +91,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaseDatos\Procedimientos.sql" />
+    <Content Include="BaseDatos\Script.sql" />
+    <Content Include="BaseDatos\Vistas.sql" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

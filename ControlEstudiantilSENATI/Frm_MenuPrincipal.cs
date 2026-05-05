@@ -16,5 +16,15 @@ namespace ControlEstudiantilSENATI
         {
             InitializeComponent();
         }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
