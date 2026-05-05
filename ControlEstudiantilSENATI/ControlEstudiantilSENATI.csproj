@@ -97,11 +97,11 @@
     <Compile Include="Form9 Configuración.Designer.cs">
       <DependentUpon>Form9 Configuración.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario\Form1 Estudiante.cs">
+    <Compile Include="Formulario\Form1_Estudiante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario\Form1 Estudiante.Designer.cs">
-      <DependentUpon>Form1 Estudiante.cs</DependentUpon>
+    <Compile Include="Formulario\Form1_Estudiante.Designer.cs">
+      <DependentUpon>Form1_Estudiante.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
@@ -141,8 +141,8 @@
     <EmbeddedResource Include="Form9 Configuración.resx">
       <DependentUpon>Form9 Configuración.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario\Form1 Estudiante.resx">
-      <DependentUpon>Form1 Estudiante.cs</DependentUpon>
+    <EmbeddedResource Include="Formulario\Form1_Estudiante.resx">
+      <DependentUpon>Form1_Estudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
