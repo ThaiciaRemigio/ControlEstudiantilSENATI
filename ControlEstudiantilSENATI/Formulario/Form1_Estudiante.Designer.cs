@@ -129,7 +129,7 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Frm_Estudiantes";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            
             // 
             // cmbGenero
             // 
@@ -178,7 +178,7 @@
             this.label15.Size = new System.Drawing.Size(64, 16);
             this.label15.TabIndex = 25;
             this.label15.Text = "Correo 2 : ";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
+           
             // 
             // label14
             // 
@@ -375,7 +375,7 @@
             this.label2.Size = new System.Drawing.Size(90, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "ID Estudiante : ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            
             // 
             // groupBox2
             // 
@@ -390,7 +390,7 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Opciones :";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            
             // 
             // BTNELIMINAR
             // 
@@ -426,8 +426,7 @@
             this.BTNGUARDAR.TabIndex = 1;
             this.BTNGUARDAR.Text = "GUARDAR";
             this.BTNGUARDAR.UseVisualStyleBackColor = false;
-            this.BTNGUARDAR.Click += new System.EventHandler(this.BTNGUARDAR_Click);
-            // 
+            
             // BTNNUEVO
             // 
             this.BTNNUEVO.BackColor = System.Drawing.Color.DodgerBlue;
@@ -438,7 +437,7 @@
             this.BTNNUEVO.TabIndex = 0;
             this.BTNNUEVO.Text = "NUEVO";
             this.BTNNUEVO.UseVisualStyleBackColor = false;
-            this.BTNNUEVO.Click += new System.EventHandler(this.BTNNUEVO_Click);
+            
             // 
             // dgvEstudiantes
             // 
@@ -468,7 +467,7 @@
             this.label16.Size = new System.Drawing.Size(140, 16);
             this.label16.TabIndex = 5;
             this.label16.Text = "Ingresar datos a buscar :";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+           
             // 
             // txtEstudiante
             // 
@@ -476,7 +475,7 @@
             this.txtEstudiante.Name = "txtEstudiante";
             this.txtEstudiante.Size = new System.Drawing.Size(392, 20);
             this.txtEstudiante.TabIndex = 6;
-            this.txtEstudiante.TextChanged += new System.EventHandler(this.txtEstudiante_TextChanged);
+            
             // 
             // BTNBUSCAR
             // 
@@ -488,7 +487,7 @@
             this.BTNBUSCAR.TabIndex = 7;
             this.BTNBUSCAR.Text = "BUSCAR";
             this.BTNBUSCAR.UseVisualStyleBackColor = false;
-            this.BTNBUSCAR.Click += new System.EventHandler(this.BTNBUSCAR_Click);
+            
             // 
             // BTNCERRAR
             // 
@@ -529,7 +528,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1_Estudiante";
             this.Text = "Form1_Estudiante";
-            this.Load += new System.EventHandler(this.Form1_Estudiante_Load);
+            
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
