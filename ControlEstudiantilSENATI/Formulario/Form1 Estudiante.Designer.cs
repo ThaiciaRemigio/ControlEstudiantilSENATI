@@ -63,7 +63,7 @@
             this.BTNGUARDAR = new System.Windows.Forms.Button();
             this.BTNMODIFICAR = new System.Windows.Forms.Button();
             this.BTNELIMINAR = new System.Windows.Forms.Button();
-            this.cmgEstudiantes = new System.Windows.Forms.DataGridView();
+            this.PanelEstudiantes = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -72,7 +72,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmgEstudiantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelEstudiantes)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -417,13 +417,13 @@
             this.BTNELIMINAR.Text = "ELIMINAR";
             this.BTNELIMINAR.UseVisualStyleBackColor = false;
             // 
-            // cmgEstudiantes
+            // PanelEstudiantes
             // 
-            this.cmgEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.cmgEstudiantes.Location = new System.Drawing.Point(12, 472);
-            this.cmgEstudiantes.Name = "cmgEstudiantes";
-            this.cmgEstudiantes.Size = new System.Drawing.Size(1059, 212);
-            this.cmgEstudiantes.TabIndex = 3;
+            this.PanelEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PanelEstudiantes.Location = new System.Drawing.Point(12, 472);
+            this.PanelEstudiantes.Name = "PanelEstudiantes";
+            this.PanelEstudiantes.Size = new System.Drawing.Size(1059, 212);
+            this.PanelEstudiantes.TabIndex = 3;
             // 
             // panel1
             // 
@@ -498,7 +498,7 @@
             this.Controls.Add(this.txtEstudiante);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.cmgEstudiantes);
+            this.Controls.Add(this.PanelEstudiantes);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1_Estudiante";
@@ -506,7 +506,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cmgEstudiantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelEstudiantes)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -551,7 +551,7 @@
         private System.Windows.Forms.Button BTNMODIFICAR;
         private System.Windows.Forms.Button BTNGUARDAR;
         private System.Windows.Forms.Button BTNNUEVO;
-        private System.Windows.Forms.DataGridView cmgEstudiantes;
+        private System.Windows.Forms.DataGridView PanelEstudiantes;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label16;

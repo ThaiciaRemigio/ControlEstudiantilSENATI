@@ -16,5 +16,10 @@ namespace ControlEstudiantilSENATI
         {
             InitializeComponent();
         }
+
+        private void txtDni_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
