@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6_Pagos));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.BTNCERRAR = new System.Windows.Forms.Button();
@@ -41,6 +42,11 @@
             this.BTNGUARDAR = new System.Windows.Forms.Button();
             this.BTNNUEVO = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txtImporte = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.BTNMOSTRAR = new System.Windows.Forms.Button();
             this.txtTelf1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -59,34 +65,32 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtImporte = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPagos)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1118, 34);
+            this.panel1.Size = new System.Drawing.Size(1118, 72);
             this.panel1.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(437, 9);
+            this.label1.Location = new System.Drawing.Point(370, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 23);
+            this.label1.Size = new System.Drawing.Size(321, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "REGISTRO PARA PAGOS";
             // 
@@ -95,7 +99,7 @@
             this.BTNCERRAR.BackColor = System.Drawing.Color.Navy;
             this.BTNCERRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCERRAR.ForeColor = System.Drawing.Color.White;
-            this.BTNCERRAR.Location = new System.Drawing.Point(918, 688);
+            this.BTNCERRAR.Location = new System.Drawing.Point(914, 726);
             this.BTNCERRAR.Name = "BTNCERRAR";
             this.BTNCERRAR.Size = new System.Drawing.Size(153, 49);
             this.BTNCERRAR.TabIndex = 16;
@@ -106,7 +110,7 @@
             // 
             this.BTNBUSCAR.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTNBUSCAR.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNBUSCAR.Location = new System.Drawing.Point(818, 405);
+            this.BTNBUSCAR.Location = new System.Drawing.Point(814, 443);
             this.BTNBUSCAR.Name = "BTNBUSCAR";
             this.BTNBUSCAR.Size = new System.Drawing.Size(119, 35);
             this.BTNBUSCAR.TabIndex = 15;
@@ -115,7 +119,7 @@
             // 
             // txtEstudiante
             // 
-            this.txtEstudiante.Location = new System.Drawing.Point(420, 412);
+            this.txtEstudiante.Location = new System.Drawing.Point(416, 450);
             this.txtEstudiante.Name = "txtEstudiante";
             this.txtEstudiante.Size = new System.Drawing.Size(392, 20);
             this.txtEstudiante.TabIndex = 14;
@@ -123,17 +127,17 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(249, 412);
+            this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(245, 450);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(140, 16);
+            this.label16.Size = new System.Drawing.Size(158, 16);
             this.label16.TabIndex = 13;
             this.label16.Text = "Ingresar datos a buscar :";
             // 
             // dgvPagos
             // 
             this.dgvPagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPagos.Location = new System.Drawing.Point(12, 446);
+            this.dgvPagos.Location = new System.Drawing.Point(8, 484);
             this.dgvPagos.Name = "dgvPagos";
             this.dgvPagos.Size = new System.Drawing.Size(1103, 236);
             this.dgvPagos.TabIndex = 11;
@@ -146,7 +150,7 @@
             this.groupBox2.Controls.Add(this.BTNGUARDAR);
             this.groupBox2.Controls.Add(this.BTNNUEVO);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 308);
+            this.groupBox2.Location = new System.Drawing.Point(8, 346);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1107, 85);
             this.groupBox2.TabIndex = 10;
@@ -223,196 +227,13 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 38);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(8, 76);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1107, 254);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Frm_Pagos";
-            // 
-            // BTNMOSTRAR
-            // 
-            this.BTNMOSTRAR.BackColor = System.Drawing.SystemColors.Control;
-            this.BTNMOSTRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNMOSTRAR.Location = new System.Drawing.Point(807, 74);
-            this.BTNMOSTRAR.Name = "BTNMOSTRAR";
-            this.BTNMOSTRAR.Size = new System.Drawing.Size(252, 49);
-            this.BTNMOSTRAR.TabIndex = 28;
-            this.BTNMOSTRAR.Text = "MOSTRAR";
-            this.BTNMOSTRAR.UseVisualStyleBackColor = false;
-            // 
-            // txtTelf1
-            // 
-            this.txtTelf1.Location = new System.Drawing.Point(543, 198);
-            this.txtTelf1.Name = "txtTelf1";
-            this.txtTelf1.Size = new System.Drawing.Size(217, 23);
-            this.txtTelf1.TabIndex = 22;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(405, 201);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(87, 16);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Estado (Pago): ";
-            // 
-            // txtApoderado
-            // 
-            this.txtApoderado.Location = new System.Drawing.Point(543, 155);
-            this.txtApoderado.Name = "txtApoderado";
-            this.txtApoderado.Size = new System.Drawing.Size(217, 23);
-            this.txtApoderado.TabIndex = 19;
-            // 
-            // txtProcedencia
-            // 
-            this.txtProcedencia.Location = new System.Drawing.Point(543, 112);
-            this.txtProcedencia.Name = "txtProcedencia";
-            this.txtProcedencia.Size = new System.Drawing.Size(217, 23);
-            this.txtProcedencia.TabIndex = 18;
-            // 
-            // txtDistrito
-            // 
-            this.txtDistrito.Location = new System.Drawing.Point(543, 74);
-            this.txtDistrito.Name = "txtDistrito";
-            this.txtDistrito.Size = new System.Drawing.Size(217, 23);
-            this.txtDistrito.TabIndex = 17;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(405, 158);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(141, 16);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "Fecha de Actualización : ";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(405, 119);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(97, 16);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Observaciones : ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(405, 81);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 16);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Total : ";
-            // 
-            // txtApellidos
-            // 
-            this.txtApellidos.Location = new System.Drawing.Point(166, 151);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(203, 23);
-            this.txtApellidos.TabIndex = 11;
-            // 
-            // txtEstudiante_Matricula
-            // 
-            this.txtEstudiante_Matricula.Location = new System.Drawing.Point(166, 71);
-            this.txtEstudiante_Matricula.Name = "txtEstudiante_Matricula";
-            this.txtEstudiante_Matricula.Size = new System.Drawing.Size(203, 23);
-            this.txtEstudiante_Matricula.TabIndex = 9;
-            // 
-            // txtidPago
-            // 
-            this.txtidPago.ForeColor = System.Drawing.Color.Silver;
-            this.txtidPago.Location = new System.Drawing.Point(166, 32);
-            this.txtidPago.Name = "txtidPago";
-            this.txtidPago.Size = new System.Drawing.Size(203, 23);
-            this.txtidPago.TabIndex = 8;
-            this.txtidPago.Text = "                     (Automatico)";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(405, 39);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 16);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Importe : ";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 194);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 16);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Fecha de Registro : ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 151);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 16);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Numero de Operacion : ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 112);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Tipo de Pago : ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 74);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Estudiante/Matricula : ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "ID Pago : ";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(166, 191);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(203, 24);
-            this.comboBox1.TabIndex = 30;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(775, 39);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 16);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Estado (Registro): ";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(888, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 23);
-            this.textBox1.TabIndex = 32;
-            // 
-            // txtImporte
-            // 
-            this.txtImporte.Location = new System.Drawing.Point(543, 32);
-            this.txtImporte.Name = "txtImporte";
-            this.txtImporte.Size = new System.Drawing.Size(217, 23);
-            this.txtImporte.TabIndex = 33;
             // 
             // comboBox2
             // 
@@ -429,11 +250,216 @@
             this.comboBox2.TabIndex = 34;
             this.comboBox2.Text = "                    <<Seleccione>>";
             // 
+            // txtImporte
+            // 
+            this.txtImporte.Location = new System.Drawing.Point(563, 32);
+            this.txtImporte.Name = "txtImporte";
+            this.txtImporte.Size = new System.Drawing.Size(217, 24);
+            this.txtImporte.TabIndex = 33;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(902, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(190, 24);
+            this.textBox1.TabIndex = 32;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(786, 39);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(121, 16);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Estado (Registro): ";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(166, 191);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(203, 24);
+            this.comboBox1.TabIndex = 30;
+            // 
+            // BTNMOSTRAR
+            // 
+            this.BTNMOSTRAR.BackColor = System.Drawing.SystemColors.Control;
+            this.BTNMOSTRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNMOSTRAR.Location = new System.Drawing.Point(830, 74);
+            this.BTNMOSTRAR.Name = "BTNMOSTRAR";
+            this.BTNMOSTRAR.Size = new System.Drawing.Size(252, 49);
+            this.BTNMOSTRAR.TabIndex = 28;
+            this.BTNMOSTRAR.Text = "MOSTRAR";
+            this.BTNMOSTRAR.UseVisualStyleBackColor = false;
+            // 
+            // txtTelf1
+            // 
+            this.txtTelf1.Location = new System.Drawing.Point(563, 198);
+            this.txtTelf1.Name = "txtTelf1";
+            this.txtTelf1.Size = new System.Drawing.Size(217, 24);
+            this.txtTelf1.TabIndex = 22;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(405, 201);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(101, 16);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "Estado (Pago): ";
+            // 
+            // txtApoderado
+            // 
+            this.txtApoderado.Location = new System.Drawing.Point(563, 158);
+            this.txtApoderado.Name = "txtApoderado";
+            this.txtApoderado.Size = new System.Drawing.Size(217, 24);
+            this.txtApoderado.TabIndex = 19;
+            // 
+            // txtProcedencia
+            // 
+            this.txtProcedencia.Location = new System.Drawing.Point(563, 112);
+            this.txtProcedencia.Name = "txtProcedencia";
+            this.txtProcedencia.Size = new System.Drawing.Size(217, 24);
+            this.txtProcedencia.TabIndex = 18;
+            // 
+            // txtDistrito
+            // 
+            this.txtDistrito.Location = new System.Drawing.Point(563, 74);
+            this.txtDistrito.Name = "txtDistrito";
+            this.txtDistrito.Size = new System.Drawing.Size(217, 24);
+            this.txtDistrito.TabIndex = 17;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(405, 158);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(159, 16);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Fecha de Actualización : ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(405, 119);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(108, 16);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Observaciones : ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(405, 81);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(51, 16);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Total : ";
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.Location = new System.Drawing.Point(166, 151);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(203, 24);
+            this.txtApellidos.TabIndex = 11;
+            // 
+            // txtEstudiante_Matricula
+            // 
+            this.txtEstudiante_Matricula.Location = new System.Drawing.Point(166, 71);
+            this.txtEstudiante_Matricula.Name = "txtEstudiante_Matricula";
+            this.txtEstudiante_Matricula.Size = new System.Drawing.Size(203, 24);
+            this.txtEstudiante_Matricula.TabIndex = 9;
+            // 
+            // txtidPago
+            // 
+            this.txtidPago.ForeColor = System.Drawing.Color.Silver;
+            this.txtidPago.Location = new System.Drawing.Point(166, 32);
+            this.txtidPago.Name = "txtidPago";
+            this.txtidPago.Size = new System.Drawing.Size(203, 24);
+            this.txtidPago.TabIndex = 8;
+            this.txtidPago.Text = "                     (Automatico)";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(405, 39);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(68, 16);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Importe : ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(21, 194);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(128, 16);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Fecha de Registro : ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(21, 151);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 16);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Numero de Operacion : ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(21, 112);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Tipo de Pago : ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(148, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Estudiante/Matricula : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "ID Pago : ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(7, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 58);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form6_Pagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1127, 742);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1127, 807);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BTNCERRAR);
             this.Controls.Add(this.BTNBUSCAR);
@@ -450,6 +476,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -492,5 +519,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox txtImporte;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

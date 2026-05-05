@@ -46,29 +46,32 @@
             this.BTNPDF = new System.Windows.Forms.Button();
             this.BTNIMPRIMIR = new System.Windows.Forms.Button();
             this.BTNCERRAR = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.Frm_Busqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(941, 55);
+            this.panel1.Size = new System.Drawing.Size(941, 70);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(333, 16);
+            this.label1.Location = new System.Drawing.Point(290, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 46);
+            this.label1.Size = new System.Drawing.Size(367, 68);
             this.label1.TabIndex = 1;
             this.label1.Text = "REGISTRO PARA USUARIOS\r\n\r\n";
             // 
@@ -84,7 +87,7 @@
             this.Frm_Busqueda.Controls.Add(this.label3);
             this.Frm_Busqueda.Controls.Add(this.label2);
             this.Frm_Busqueda.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Frm_Busqueda.Location = new System.Drawing.Point(12, 67);
+            this.Frm_Busqueda.Location = new System.Drawing.Point(12, 78);
             this.Frm_Busqueda.Name = "Frm_Busqueda";
             this.Frm_Busqueda.Size = new System.Drawing.Size(929, 138);
             this.Frm_Busqueda.TabIndex = 1;
@@ -167,7 +170,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 248);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 259);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(929, 242);
             this.dataGridView1.TabIndex = 2;
@@ -176,7 +179,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(70, 220);
+            this.label5.Location = new System.Drawing.Point(70, 231);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 16);
             this.label5.TabIndex = 3;
@@ -185,7 +188,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 211);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 222);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,7 +200,7 @@
             this.BTNPDF.BackColor = System.Drawing.Color.Navy;
             this.BTNPDF.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNPDF.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BTNPDF.Location = new System.Drawing.Point(416, 509);
+            this.BTNPDF.Location = new System.Drawing.Point(416, 520);
             this.BTNPDF.Name = "BTNPDF";
             this.BTNPDF.Size = new System.Drawing.Size(154, 37);
             this.BTNPDF.TabIndex = 5;
@@ -209,7 +212,7 @@
             this.BTNIMPRIMIR.BackColor = System.Drawing.Color.Navy;
             this.BTNIMPRIMIR.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNIMPRIMIR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BTNIMPRIMIR.Location = new System.Drawing.Point(591, 509);
+            this.BTNIMPRIMIR.Location = new System.Drawing.Point(591, 520);
             this.BTNIMPRIMIR.Name = "BTNIMPRIMIR";
             this.BTNIMPRIMIR.Size = new System.Drawing.Size(154, 37);
             this.BTNIMPRIMIR.TabIndex = 6;
@@ -221,19 +224,29 @@
             this.BTNCERRAR.BackColor = System.Drawing.Color.Navy;
             this.BTNCERRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCERRAR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BTNCERRAR.Location = new System.Drawing.Point(770, 509);
+            this.BTNCERRAR.Location = new System.Drawing.Point(770, 520);
             this.BTNCERRAR.Name = "BTNCERRAR";
             this.BTNCERRAR.Size = new System.Drawing.Size(154, 37);
             this.BTNCERRAR.TabIndex = 7;
             this.BTNCERRAR.Text = "CERRAR";
             this.BTNCERRAR.UseVisualStyleBackColor = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(14, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 70);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form8_Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(950, 559);
+            this.ClientSize = new System.Drawing.Size(950, 578);
             this.Controls.Add(this.BTNCERRAR);
             this.Controls.Add(this.BTNIMPRIMIR);
             this.Controls.Add(this.BTNPDF);
@@ -249,6 +262,7 @@
             this.Frm_Busqueda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,5 +287,6 @@
         private System.Windows.Forms.Button BTNPDF;
         private System.Windows.Forms.Button BTNIMPRIMIR;
         private System.Windows.Forms.Button BTNCERRAR;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
