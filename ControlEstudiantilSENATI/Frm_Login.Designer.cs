@@ -34,11 +34,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.checkBoxRecordarme = new System.Windows.Forms.CheckBox();
+            this.linkLabel = new System.Windows.Forms.LinkLabel();
+            this.BTNSESION = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,53 +93,58 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Contraseña:";
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(699, 328);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(430, 36);
-            this.textBox1.TabIndex = 5;
+            this.txtUsuario.Location = new System.Drawing.Point(699, 328);
+            this.txtUsuario.Multiline = true;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(430, 36);
+            this.txtUsuario.TabIndex = 5;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
-            // textBox2
+            // txtContraseña
             // 
-            this.textBox2.Location = new System.Drawing.Point(700, 415);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(429, 36);
-            this.textBox2.TabIndex = 6;
+            this.txtContraseña.Location = new System.Drawing.Point(700, 415);
+            this.txtContraseña.Multiline = true;
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(429, 36);
+            this.txtContraseña.TabIndex = 6;
+            this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
-            // checkBox1
+            // checkBoxRecordarme
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(700, 468);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(105, 20);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "Recordarme";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxRecordarme.AutoSize = true;
+            this.checkBoxRecordarme.Location = new System.Drawing.Point(700, 468);
+            this.checkBoxRecordarme.Name = "checkBoxRecordarme";
+            this.checkBoxRecordarme.Size = new System.Drawing.Size(105, 20);
+            this.checkBoxRecordarme.TabIndex = 7;
+            this.checkBoxRecordarme.Text = "Recordarme";
+            this.checkBoxRecordarme.UseVisualStyleBackColor = true;
+            this.checkBoxRecordarme.CheckedChanged += new System.EventHandler(this.checkBoxRecordarme_CheckedChanged);
             // 
-            // linkLabel1
+            // linkLabel
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(982, 469);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(147, 16);
-            this.linkLabel1.TabIndex = 8;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "¿Olvidó su contraseña?";
+            this.linkLabel.AutoSize = true;
+            this.linkLabel.Location = new System.Drawing.Point(982, 469);
+            this.linkLabel.Name = "linkLabel";
+            this.linkLabel.Size = new System.Drawing.Size(147, 16);
+            this.linkLabel.TabIndex = 8;
+            this.linkLabel.TabStop = true;
+            this.linkLabel.Text = "¿Olvidó su contraseña?";
+            this.linkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
             // 
-            // button1
+            // BTNSESION
             // 
-            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(815, 543);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 53);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Iniciar Sesión";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BTNSESION.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BTNSESION.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNSESION.ForeColor = System.Drawing.Color.White;
+            this.BTNSESION.Location = new System.Drawing.Point(815, 543);
+            this.BTNSESION.Name = "BTNSESION";
+            this.BTNSESION.Size = new System.Drawing.Size(217, 53);
+            this.BTNSESION.TabIndex = 9;
+            this.BTNSESION.Text = "Iniciar Sesión";
+            this.BTNSESION.UseVisualStyleBackColor = false;
+            this.BTNSESION.Click += new System.EventHandler(this.BTNSESION_Click);
             // 
             // label5
             // 
@@ -157,11 +162,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1208, 765);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BTNSESION);
+            this.Controls.Add(this.linkLabel);
+            this.Controls.Add(this.checkBoxRecordarme);
+            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -182,11 +187,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.CheckBox checkBoxRecordarme;
+        private System.Windows.Forms.LinkLabel linkLabel;
+        private System.Windows.Forms.Button BTNSESION;
         private System.Windows.Forms.Label label5;
     }
 }
