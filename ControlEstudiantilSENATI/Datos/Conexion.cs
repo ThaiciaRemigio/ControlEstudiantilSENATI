@@ -1,12 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using System.Data.SqlClient;
+
+
 
 namespace ControlEstudiantilSENATI.Datos
+
 {
-    internal class Conexion
+
+    public class Conexion
+
     {
+
+        // 🔴 Cambia si tu SQL Server tiene otro nombre o instancia
+
+        private string cadena = @"Server=(localdb)\MSSQLLocalDB;Database=ControlEstudiantilSenati;Trusted_Connection=True;";
+
+
+
+        public SqlConnection GetConexion()
+
+        {
+
+            return new SqlConnection(cadena);
+
+        }
+
     }
+
 }
