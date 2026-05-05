@@ -26,5 +26,65 @@ namespace ControlEstudiantilSENATI
         {
 
         }
+
+        private void Form1_Estudiante_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNCERRAR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtEstudiante_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNBUSCAR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNELIMINAR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNMODIFICAR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNGUARDAR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNNUEVO_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

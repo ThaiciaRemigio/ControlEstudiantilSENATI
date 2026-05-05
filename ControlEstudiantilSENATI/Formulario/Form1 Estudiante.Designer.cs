@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1_Estudiante));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbGenero = new System.Windows.Forms.ComboBox();
@@ -70,10 +71,12 @@
             this.txtEstudiante = new System.Windows.Forms.TextBox();
             this.BTNBUSCAR = new System.Windows.Forms.Button();
             this.BTNCERRAR = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,7 +84,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(381, 11);
+            this.label1.Location = new System.Drawing.Point(376, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 23);
             this.label1.TabIndex = 0;
@@ -120,12 +123,13 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 40);
+            this.groupBox1.Location = new System.Drawing.Point(12, 60);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1059, 280);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Frm_Estudiantes";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cmbGenero
             // 
@@ -380,12 +384,13 @@
             this.groupBox2.Controls.Add(this.BTNGUARDAR);
             this.groupBox2.Controls.Add(this.BTNNUEVO);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 336);
+            this.groupBox2.Location = new System.Drawing.Point(12, 356);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1059, 85);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Opciones :";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // BTNELIMINAR
             // 
@@ -397,6 +402,7 @@
             this.BTNELIMINAR.TabIndex = 3;
             this.BTNELIMINAR.Text = "ELIMINAR";
             this.BTNELIMINAR.UseVisualStyleBackColor = false;
+            this.BTNELIMINAR.Click += new System.EventHandler(this.BTNELIMINAR_Click);
             // 
             // BTNMODIFICAR
             // 
@@ -408,6 +414,7 @@
             this.BTNMODIFICAR.TabIndex = 2;
             this.BTNMODIFICAR.Text = "MODIFICAR";
             this.BTNMODIFICAR.UseVisualStyleBackColor = false;
+            this.BTNMODIFICAR.Click += new System.EventHandler(this.BTNMODIFICAR_Click);
             // 
             // BTNGUARDAR
             // 
@@ -419,6 +426,7 @@
             this.BTNGUARDAR.TabIndex = 1;
             this.BTNGUARDAR.Text = "GUARDAR";
             this.BTNGUARDAR.UseVisualStyleBackColor = false;
+            this.BTNGUARDAR.Click += new System.EventHandler(this.BTNGUARDAR_Click);
             // 
             // BTNNUEVO
             // 
@@ -430,70 +438,87 @@
             this.BTNNUEVO.TabIndex = 0;
             this.BTNNUEVO.Text = "NUEVO";
             this.BTNNUEVO.UseVisualStyleBackColor = false;
+            this.BTNNUEVO.Click += new System.EventHandler(this.BTNNUEVO_Click);
             // 
             // dgvEstudiantes
             // 
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstudiantes.Location = new System.Drawing.Point(12, 472);
+            this.dgvEstudiantes.Location = new System.Drawing.Point(12, 492);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
             this.dgvEstudiantes.Size = new System.Drawing.Size(1059, 212);
             this.dgvEstudiantes.TabIndex = 3;
+            this.dgvEstudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstudiantes_CellContentClick);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1082, 34);
+            this.panel1.Size = new System.Drawing.Size(1082, 54);
             this.panel1.TabIndex = 4;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(259, 438);
+            this.label16.Location = new System.Drawing.Point(259, 458);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(140, 16);
             this.label16.TabIndex = 5;
             this.label16.Text = "Ingresar datos a buscar :";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // txtEstudiante
             // 
-            this.txtEstudiante.Location = new System.Drawing.Point(430, 438);
+            this.txtEstudiante.Location = new System.Drawing.Point(430, 458);
             this.txtEstudiante.Name = "txtEstudiante";
             this.txtEstudiante.Size = new System.Drawing.Size(392, 20);
             this.txtEstudiante.TabIndex = 6;
+            this.txtEstudiante.TextChanged += new System.EventHandler(this.txtEstudiante_TextChanged);
             // 
             // BTNBUSCAR
             // 
             this.BTNBUSCAR.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTNBUSCAR.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNBUSCAR.Location = new System.Drawing.Point(828, 431);
+            this.BTNBUSCAR.Location = new System.Drawing.Point(828, 451);
             this.BTNBUSCAR.Name = "BTNBUSCAR";
             this.BTNBUSCAR.Size = new System.Drawing.Size(119, 35);
             this.BTNBUSCAR.TabIndex = 7;
             this.BTNBUSCAR.Text = "BUSCAR";
             this.BTNBUSCAR.UseVisualStyleBackColor = false;
+            this.BTNBUSCAR.Click += new System.EventHandler(this.BTNBUSCAR_Click);
             // 
             // BTNCERRAR
             // 
             this.BTNCERRAR.BackColor = System.Drawing.Color.Navy;
             this.BTNCERRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCERRAR.ForeColor = System.Drawing.Color.White;
-            this.BTNCERRAR.Location = new System.Drawing.Point(909, 690);
+            this.BTNCERRAR.Location = new System.Drawing.Point(905, 710);
             this.BTNCERRAR.Name = "BTNCERRAR";
             this.BTNCERRAR.Size = new System.Drawing.Size(153, 49);
             this.BTNCERRAR.TabIndex = 8;
             this.BTNCERRAR.Text = "CERRAR";
             this.BTNCERRAR.UseVisualStyleBackColor = false;
+            this.BTNCERRAR.Click += new System.EventHandler(this.BTNCERRAR_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(22, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1_Estudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1084, 749);
+            this.ClientSize = new System.Drawing.Size(1084, 757);
             this.Controls.Add(this.BTNCERRAR);
             this.Controls.Add(this.BTNBUSCAR);
             this.Controls.Add(this.txtEstudiante);
@@ -504,12 +529,14 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1_Estudiante";
             this.Text = "Form1_Estudiante";
+            this.Load += new System.EventHandler(this.Form1_Estudiante_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -559,5 +586,6 @@
         private System.Windows.Forms.TextBox txtEstudiante;
         private System.Windows.Forms.Button BTNBUSCAR;
         private System.Windows.Forms.Button BTNCERRAR;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

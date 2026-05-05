@@ -425,7 +425,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 742);
+            this.ClientSize = new System.Drawing.Size(982, 761);
             this.Controls.Add(this.BTNCERRAR);
             this.Controls.Add(this.BTNBUSCAR);
             this.Controls.Add(this.txtMatriculas);
