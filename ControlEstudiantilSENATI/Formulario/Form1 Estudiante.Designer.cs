@@ -57,17 +57,17 @@
             this.label15 = new System.Windows.Forms.Label();
             this.txtCorreo1 = new System.Windows.Forms.TextBox();
             this.txtCorreo2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BTNMOSTRAR = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BTNNUEVO = new System.Windows.Forms.Button();
+            this.BTNGUARDAR = new System.Windows.Forms.Button();
+            this.BTNMODIFICAR = new System.Windows.Forms.Button();
+            this.BTNELIMINAR = new System.Windows.Forms.Button();
             this.cmgEstudiantes = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEstudiante = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -81,7 +81,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(378, 9);
+            this.label1.Location = new System.Drawing.Point(437, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 23);
             this.label1.TabIndex = 0;
@@ -91,7 +91,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.BTNMOSTRAR);
             this.groupBox1.Controls.Add(this.txtCorreo2);
             this.groupBox1.Controls.Add(this.txtCorreo1);
             this.groupBox1.Controls.Add(this.label15);
@@ -348,23 +348,23 @@
             this.txtCorreo2.Size = new System.Drawing.Size(217, 23);
             this.txtCorreo2.TabIndex = 27;
             // 
-            // button1
+            // BTNMOSTRAR
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(759, 128);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(263, 49);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "MOSTRAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BTNMOSTRAR.BackColor = System.Drawing.SystemColors.Control;
+            this.BTNMOSTRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNMOSTRAR.Location = new System.Drawing.Point(759, 128);
+            this.BTNMOSTRAR.Name = "BTNMOSTRAR";
+            this.BTNMOSTRAR.Size = new System.Drawing.Size(263, 49);
+            this.BTNMOSTRAR.TabIndex = 28;
+            this.BTNMOSTRAR.Text = "MOSTRAR";
+            this.BTNMOSTRAR.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.BTNELIMINAR);
+            this.groupBox2.Controls.Add(this.BTNMODIFICAR);
+            this.groupBox2.Controls.Add(this.BTNGUARDAR);
+            this.groupBox2.Controls.Add(this.BTNNUEVO);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 336);
             this.groupBox2.Name = "groupBox2";
@@ -373,49 +373,49 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Opciones :";
             // 
-            // button2
+            // BTNNUEVO
             // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(40, 22);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(206, 47);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "NUEVO";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BTNNUEVO.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BTNNUEVO.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNNUEVO.Location = new System.Drawing.Point(40, 22);
+            this.BTNNUEVO.Name = "BTNNUEVO";
+            this.BTNNUEVO.Size = new System.Drawing.Size(206, 47);
+            this.BTNNUEVO.TabIndex = 0;
+            this.BTNNUEVO.Text = "NUEVO";
+            this.BTNNUEVO.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // BTNGUARDAR
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(286, 22);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(206, 47);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "GUARDAR";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BTNGUARDAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BTNGUARDAR.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNGUARDAR.Location = new System.Drawing.Point(286, 22);
+            this.BTNGUARDAR.Name = "BTNGUARDAR";
+            this.BTNGUARDAR.Size = new System.Drawing.Size(206, 47);
+            this.BTNGUARDAR.TabIndex = 1;
+            this.BTNGUARDAR.Text = "GUARDAR";
+            this.BTNGUARDAR.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // BTNMODIFICAR
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button4.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(532, 22);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(206, 47);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "MODIFICAR";
-            this.button4.UseVisualStyleBackColor = false;
+            this.BTNMODIFICAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BTNMODIFICAR.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNMODIFICAR.Location = new System.Drawing.Point(532, 22);
+            this.BTNMODIFICAR.Name = "BTNMODIFICAR";
+            this.BTNMODIFICAR.Size = new System.Drawing.Size(206, 47);
+            this.BTNMODIFICAR.TabIndex = 2;
+            this.BTNMODIFICAR.Text = "MODIFICAR";
+            this.BTNMODIFICAR.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // BTNELIMINAR
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button5.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(789, 22);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(206, 47);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "ELIMINAR";
-            this.button5.UseVisualStyleBackColor = false;
+            this.BTNELIMINAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BTNELIMINAR.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNELIMINAR.Location = new System.Drawing.Point(789, 22);
+            this.BTNELIMINAR.Name = "BTNELIMINAR";
+            this.BTNELIMINAR.Size = new System.Drawing.Size(206, 47);
+            this.BTNELIMINAR.TabIndex = 3;
+            this.BTNELIMINAR.Text = "ELIMINAR";
+            this.BTNELIMINAR.UseVisualStyleBackColor = false;
             // 
             // cmgEstudiantes
             // 
@@ -429,9 +429,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 0);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1059, 34);
+            this.panel1.Size = new System.Drawing.Size(1082, 34);
             this.panel1.TabIndex = 4;
             // 
             // comboBox1
@@ -457,12 +457,12 @@
             this.label16.TabIndex = 5;
             this.label16.Text = "Ingresar datos a buscar :";
             // 
-            // textBox1
+            // txtEstudiante
             // 
-            this.textBox1.Location = new System.Drawing.Point(430, 438);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(392, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtEstudiante.Location = new System.Drawing.Point(430, 438);
+            this.txtEstudiante.Name = "txtEstudiante";
+            this.txtEstudiante.Size = new System.Drawing.Size(392, 20);
+            this.txtEstudiante.TabIndex = 6;
             // 
             // button6
             // 
@@ -495,7 +495,7 @@
             this.ClientSize = new System.Drawing.Size(1083, 749);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEstudiante);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cmgEstudiantes);
@@ -544,18 +544,18 @@
         private System.Windows.Forms.TextBox txtCorreo1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BTNMOSTRAR;
         private System.Windows.Forms.TextBox txtCorreo2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BTNELIMINAR;
+        private System.Windows.Forms.Button BTNMODIFICAR;
+        private System.Windows.Forms.Button BTNGUARDAR;
+        private System.Windows.Forms.Button BTNNUEVO;
         private System.Windows.Forms.DataGridView cmgEstudiantes;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEstudiante;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
     }

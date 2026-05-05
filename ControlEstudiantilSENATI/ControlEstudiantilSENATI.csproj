@@ -49,6 +49,12 @@
     <Compile Include="Datos\Conexion.cs" />
     <Compile Include="Datos\EstudianteDAL.cs" />
     <Compile Include="Entidades\Estudiante.cs" />
+    <Compile Include="Form2 Matricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2 Matricula.Designer.cs">
+      <DependentUpon>Form2 Matricula.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulario\Form1 Estudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form2 Matricula.resx">
+      <DependentUpon>Form2 Matricula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulario\Form1 Estudiante.resx">
       <DependentUpon>Form1 Estudiante.cs</DependentUpon>
     </EmbeddedResource>

@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_MenuPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnConfiguracion = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnPagos = new System.Windows.Forms.Button();
+            this.btnPlandeEstudios = new System.Windows.Forms.Button();
+            this.btnHorarios = new System.Windows.Forms.Button();
+            this.btnApoderados = new System.Windows.Forms.Button();
+            this.btnMatricula = new System.Windows.Forms.Button();
+            this.btnEstudiantes = new System.Windows.Forms.Button();
+            this.btnInicio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
@@ -67,7 +67,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -95,17 +95,17 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel1.Controls.Add(this.button19);
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnUsuarios);
+            this.panel1.Controls.Add(this.btnSalir);
+            this.panel1.Controls.Add(this.btnConfiguracion);
+            this.panel1.Controls.Add(this.btnReportes);
+            this.panel1.Controls.Add(this.btnPagos);
+            this.panel1.Controls.Add(this.btnPlandeEstudios);
+            this.panel1.Controls.Add(this.btnHorarios);
+            this.panel1.Controls.Add(this.btnApoderados);
+            this.panel1.Controls.Add(this.btnMatricula);
+            this.panel1.Controls.Add(this.btnEstudiantes);
+            this.panel1.Controls.Add(this.btnInicio);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(9, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
@@ -113,155 +113,156 @@
             this.panel1.Size = new System.Drawing.Size(209, 692);
             this.panel1.TabIndex = 0;
             // 
-            // button10
+            // btnSalir
             // 
-            this.button10.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button10.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(15, 632);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(176, 48);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "   Salir";
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnSalir.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.Location = new System.Drawing.Point(15, 632);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(176, 48);
+            this.btnSalir.TabIndex = 10;
+            this.btnSalir.Text = "   Salir";
+            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.button10_Click);
             // 
-            // button9
+            // btnConfiguracion
             // 
-            this.button9.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(15, 580);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(176, 48);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "   Configuración";
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnConfiguracion.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnConfiguracion.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
+            this.btnConfiguracion.Image = ((System.Drawing.Image)(resources.GetObject("btnConfiguracion.Image")));
+            this.btnConfiguracion.Location = new System.Drawing.Point(15, 580);
+            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Size = new System.Drawing.Size(176, 48);
+            this.btnConfiguracion.TabIndex = 9;
+            this.btnConfiguracion.Text = "   Configuración";
+            this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConfiguracion.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnReportes
             // 
-            this.button8.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(15, 528);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(176, 48);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "   Reportes";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnReportes.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnReportes.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.Color.White;
+            this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
+            this.btnReportes.Location = new System.Drawing.Point(15, 528);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(176, 48);
+            this.btnReportes.TabIndex = 8;
+            this.btnReportes.Text = "   Reportes";
+            this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReportes.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnPagos
             // 
-            this.button7.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(15, 423);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(176, 48);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "   Pagos";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnPagos.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnPagos.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagos.ForeColor = System.Drawing.Color.White;
+            this.btnPagos.Image = ((System.Drawing.Image)(resources.GetObject("btnPagos.Image")));
+            this.btnPagos.Location = new System.Drawing.Point(15, 423);
+            this.btnPagos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPagos.Name = "btnPagos";
+            this.btnPagos.Size = new System.Drawing.Size(176, 48);
+            this.btnPagos.TabIndex = 7;
+            this.btnPagos.Text = "   Pagos";
+            this.btnPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPagos.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnPlandeEstudios
             // 
-            this.button6.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(15, 370);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(176, 48);
-            this.button6.TabIndex = 6;
-            this.button6.Text = " Plan de Estudios";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnPlandeEstudios.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnPlandeEstudios.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlandeEstudios.ForeColor = System.Drawing.Color.White;
+            this.btnPlandeEstudios.Image = ((System.Drawing.Image)(resources.GetObject("btnPlandeEstudios.Image")));
+            this.btnPlandeEstudios.Location = new System.Drawing.Point(15, 370);
+            this.btnPlandeEstudios.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPlandeEstudios.Name = "btnPlandeEstudios";
+            this.btnPlandeEstudios.Size = new System.Drawing.Size(176, 48);
+            this.btnPlandeEstudios.TabIndex = 6;
+            this.btnPlandeEstudios.Text = " Plan de Estudios";
+            this.btnPlandeEstudios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPlandeEstudios.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnHorarios
             // 
-            this.button5.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(15, 318);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(176, 48);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "   Horarios";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnHorarios.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnHorarios.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHorarios.ForeColor = System.Drawing.Color.White;
+            this.btnHorarios.Image = ((System.Drawing.Image)(resources.GetObject("btnHorarios.Image")));
+            this.btnHorarios.Location = new System.Drawing.Point(15, 318);
+            this.btnHorarios.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHorarios.Name = "btnHorarios";
+            this.btnHorarios.Size = new System.Drawing.Size(176, 48);
+            this.btnHorarios.TabIndex = 5;
+            this.btnHorarios.Text = "   Horarios";
+            this.btnHorarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHorarios.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnApoderados
             // 
-            this.button4.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(15, 265);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 48);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "   Apoderados";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnApoderados.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnApoderados.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApoderados.ForeColor = System.Drawing.Color.White;
+            this.btnApoderados.Image = ((System.Drawing.Image)(resources.GetObject("btnApoderados.Image")));
+            this.btnApoderados.Location = new System.Drawing.Point(15, 265);
+            this.btnApoderados.Margin = new System.Windows.Forms.Padding(2);
+            this.btnApoderados.Name = "btnApoderados";
+            this.btnApoderados.Size = new System.Drawing.Size(176, 48);
+            this.btnApoderados.TabIndex = 4;
+            this.btnApoderados.Text = "   Apoderados";
+            this.btnApoderados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnApoderados.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnMatricula
             // 
-            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(15, 212);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 48);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "   Matrícula";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnMatricula.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnMatricula.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatricula.ForeColor = System.Drawing.Color.White;
+            this.btnMatricula.Image = ((System.Drawing.Image)(resources.GetObject("btnMatricula.Image")));
+            this.btnMatricula.Location = new System.Drawing.Point(15, 212);
+            this.btnMatricula.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMatricula.Name = "btnMatricula";
+            this.btnMatricula.Size = new System.Drawing.Size(176, 48);
+            this.btnMatricula.TabIndex = 3;
+            this.btnMatricula.Text = "   Matrícula";
+            this.btnMatricula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMatricula.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnEstudiantes
             // 
-            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(15, 159);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 48);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "   Estudiantes";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEstudiantes.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnEstudiantes.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstudiantes.ForeColor = System.Drawing.Color.White;
+            this.btnEstudiantes.Image = ((System.Drawing.Image)(resources.GetObject("btnEstudiantes.Image")));
+            this.btnEstudiantes.Location = new System.Drawing.Point(15, 159);
+            this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEstudiantes.Name = "btnEstudiantes";
+            this.btnEstudiantes.Size = new System.Drawing.Size(176, 48);
+            this.btnEstudiantes.TabIndex = 2;
+            this.btnEstudiantes.Text = "   Estudiantes";
+            this.btnEstudiantes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEstudiantes.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnInicio
             // 
-            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(15, 106);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 48);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "   Inicio";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnInicio.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnInicio.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.Color.White;
+            this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
+            this.btnInicio.Location = new System.Drawing.Point(15, 106);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(176, 48);
+            this.btnInicio.TabIndex = 1;
+            this.btnInicio.Text = "   Inicio";
+            this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInicio.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -537,20 +538,20 @@
             this.label13.TabIndex = 28;
             this.label13.Text = "05";
             // 
-            // button19
+            // btnUsuarios
             // 
-            this.button19.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button19.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Image = ((System.Drawing.Image)(resources.GetObject("button19.Image")));
-            this.button19.Location = new System.Drawing.Point(15, 476);
-            this.button19.Margin = new System.Windows.Forms.Padding(2);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(176, 48);
-            this.button19.TabIndex = 11;
-            this.button19.Text = "     Usuarios";
-            this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button19.UseVisualStyleBackColor = false;
+            this.btnUsuarios.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.btnUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.Image")));
+            this.btnUsuarios.Location = new System.Drawing.Point(15, 476);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(176, 48);
+            this.btnUsuarios.TabIndex = 11;
+            this.btnUsuarios.Text = "     Usuarios";
+            this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -600,7 +601,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(367, 659);
+            this.label18.Location = new System.Drawing.Point(389, 659);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(487, 16);
             this.label18.TabIndex = 33;
@@ -742,16 +743,16 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnInicio;
+        private System.Windows.Forms.Button btnEstudiantes;
+        private System.Windows.Forms.Button btnMatricula;
+        private System.Windows.Forms.Button btnHorarios;
+        private System.Windows.Forms.Button btnApoderados;
+        private System.Windows.Forms.Button btnPlandeEstudios;
+        private System.Windows.Forms.Button btnPagos;
+        private System.Windows.Forms.Button btnConfiguracion;
+        private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
@@ -774,7 +775,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
