@@ -31,5 +31,11 @@ namespace ControlEstudiantilSENATI
         {
 
         }
+
+        private void btnEstudiantes_Click(object sender, EventArgs e)
+        {
+            Form1_Estudiante ESTUDIANTE = new Form1_Estudiante();
+            ESTUDIANTE.Show();
+        }
     }
 }

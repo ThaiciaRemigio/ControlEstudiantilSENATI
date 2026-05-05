@@ -67,5 +67,10 @@ namespace ControlEstudiantilSENATI
                 MessageBox.Show("Usuario o contraseña incorrectos");
             }
         }
+
+        private void Frm_Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

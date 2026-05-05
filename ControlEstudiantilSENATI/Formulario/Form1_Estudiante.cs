@@ -1,448 +1,285 @@
 ﻿using ControlEstudiantilSENATI.Datos;
-
 using ControlEstudiantilSENATI.Entidades;
-
 using System;
-
-using System.Data;
-
-using System.Linq;
-
 using System.Windows.Forms;
 
-
-
 namespace ControlEstudiantilSENATI
-
 {
-
     public partial class Form1_Estudiante : Form
-
     {
-
         EstudianteDAL dal = new EstudianteDAL();
-
         int idEstudiante = 0;
 
 
-
         public Form1_Estudiante()
-
         {
-
             InitializeComponent();
-
         }
 
-
-/*
-        // =========================
-
-        // MOSTRAR
-
-        // =========================
-
-        private void BTNMOSTRAR_Click(object sender, EventArgs e)
-
+        private void BTNNUEVO_Click(object sender, EventArgs e)
         {
-
-            dgvEstudiantes.DataSource = dal.ListarEstudiantes();
-
+            LimpiarFormulario();
         }
 
-
-
-        // =========================
-
-        // GUARDAR
-
-        // =========================
-        /*
         private void BTNGUARDAR_Click(object sender, EventArgs e)
-
         {
-
             if (!Validar()) return;
 
-
-            
             Estudiante e1 = new Estudiante()
-
             {
-                
-                Dni = txtDni.Text,
+                Dni = textBox9.Text,
+                Nombres = textBox8.Text,
+                Apellidos = textBox7.Text,
+                FechaNacimiento = dateTimePicker2.Value,
+                Edad = Convert.ToInt32(textBox1.Text),
+                Correo1 = textBox3.Text,
+                Correo2 = textBox2.Text,
+                Telefono1 = textBox5.Text,
+                Telefono2 = textBox4.Text,
 
-                Nombres = txtNombres.Text,
-
-                Apellidos = txtApellidos.Text,
-
-                FechaNacimiento = dtpFechaNacimiento.Value,
-
-                Edad = string.IsNullOrEmpty(txtEdad.Text) ? 0 : Convert.ToInt32(txtEdad.Text),
-
-                Correo1 = txtCorreo1.Text,
-
-                Correo2 = txtCorreo2.Text,
-
-                Telefono1 = txtTelf1.Text,
-
-                Telefono2 = txtTelf2.Text,
-
-
-
-                IdGenero = Convert.ToInt32(cmbGenero.SelectedValue),
-
-                IdDistrito = Convert.ToInt32(cmbDistrito.SelectedValue),
-
-                IdProcedencia = Convert.ToInt32(cmbProcedencia.SelectedValue),
-
-                IdCondicion = Convert.ToInt32(cmbCondicion.SelectedValue),
-
-                IdApoderado = Convert.ToInt32(cmbApoderado.SelectedValue),
-
+                IdGenero = Convert.ToInt32(comboBox5.SelectedValue),
+                IdDistrito = Convert.ToInt32(comboBox4.SelectedValue),
+                IdProcedencia = Convert.ToInt32(comboBox3.SelectedValue),
+                IdCondicion = Convert.ToInt32(comboBox2.SelectedValue),
+                IdApoderado = Convert.ToInt32(comboBox1.SelectedValue)
             };
-                
-
 
             MessageBox.Show(dal.InsertarEstudiante(e1));
-
             dgvEstudiantes.DataSource = dal.ListarEstudiantes();
-
-            Limpiar();
-
+            LimpiarFormulario();
         }
-
-                */
-
-        // =========================
-
-        // MODIFICAR
-
-        // =========================
 
         private void BTNMODIFICAR_Click(object sender, EventArgs e)
-
         {
+            if (!Validar()) return;
 
-            if (idEstudiante == 0)
-
-            {
-
-                MessageBox.Show("Selecciona un estudiante");
-
-                return;
-
-            }
-
-
-
-           /* if (!Validar()) return;*/
-
-
-            /*
             Estudiante e1 = new Estudiante()
-            
             {
-
                 IdEstudiante = idEstudiante,
+                Dni = textBox9.Text,
+                Nombres = textBox8.Text,
+                Apellidos = textBox7.Text,
+                FechaNacimiento = dateTimePicker2.Value,
+                Edad = Convert.ToInt32(textBox1.Text),
+                Correo1 = textBox3.Text,
+                Correo2 = textBox2.Text,
+                Telefono1 = textBox5.Text,
+                Telefono2 = textBox4.Text,
 
-                Dni = txtDni.Text,
-
-                Nombres = txtNombres.Text,
-
-                Apellidos = txtApellidos.Text,
-
-                FechaNacimiento = dtpFechaNacimiento.Value,
-
-                Edad = string.IsNullOrEmpty(txtEdad.Text) ? 0 : Convert.ToInt32(txtEdad.Text),
-
-                Correo1 = txtCorreo1.Text,
-
-                Correo2 = txtCorreo2.Text,
-
-                Telefono1 = txtTelf1.Text,
-
-                Telefono2 = txtTelf2.Text,
-
-
-
-                IdGenero = Convert.ToInt32(cmbGenero.SelectedValue),
-
-                IdDistrito = Convert.ToInt32(cmbDistrito.SelectedValue),
-
-                IdProcedencia = Convert.ToInt32(cmbProcedencia.SelectedValue),
-
-                IdCondicion = Convert.ToInt32(cmbCondicion.SelectedValue),
-
-                IdApoderado = Convert.ToInt32(cmbApoderado.SelectedValue),
-
+                IdGenero = Convert.ToInt32(comboBox5.SelectedValue),
+                IdDistrito = Convert.ToInt32(comboBox4.SelectedValue),
+                IdProcedencia = Convert.ToInt32(comboBox3.SelectedValue),
+                IdCondicion = Convert.ToInt32(comboBox2.SelectedValue),
+                IdApoderado = Convert.ToInt32(comboBox1.SelectedValue)
             };
-            
 
-
-            MessageBox.Show(dal.ModificarEstudiante(e1));
-
+            MessageBox.Show(dal.ActualizarEstudiante(e1));
             dgvEstudiantes.DataSource = dal.ListarEstudiantes();
-
-            Limpiar();
-
+            LimpiarFormulario();
         }
-        */
-
-
-        // =========================
-
-        // ELIMINAR
-
-        // =========================
 
         private void BTNELIMINAR_Click(object sender, EventArgs e)
-
         {
-
             if (idEstudiante == 0)
-
             {
-
-                MessageBox.Show("Selecciona un estudiante");
-
+                MessageBox.Show("Seleccione un estudiante");
                 return;
-
             }
 
-
-
-            DialogResult r = MessageBox.Show(
-
-              "¿Eliminar estudiante?",
-
-              "Confirmar",
-
-              MessageBoxButtons.YesNo,
-
-              MessageBoxIcon.Question);
-
-
-
-            if (r == DialogResult.Yes)
-
+            Estudiante e1 = new Estudiante()
             {
+                IdEstudiante = idEstudiante
+            };
 
-                MessageBox.Show(dal.EliminarEstudiante(idEstudiante));
+            MessageBox.Show(dal.EliminarEstudiante(e1));
+            dgvEstudiantes.DataSource = dal.ListarEstudiantes();
+            LimpiarFormulario();
+        }
 
-                dgvEstudiantes.DataSource = dal.ListarEstudiantes();
-
-                Limpiar();
-
-            }
+        private void cmbGenero_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
 
-
-
-        // =========================
-
-        // VALIDAR
-
-        // =========================
-        /*
-        private bool Validar()
-
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (txtDni.Text.Length != 8 || !txtDni.Text.All(char.IsDigit))
+        }
 
-            {
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-                MessageBox.Show("DNI inválido");
+        }
 
+        private bool Validar()
+        {
+            // DNI
+            if (txtDni.Text.Length != 8 || !int.TryParse(txtDni.Text, out _))
                 return false;
 
-            }
-
-
-
-            if (txtNombres.Text.Trim() == "" || txtApellidos.Text.Trim() == "")
-
-            {
-
-                MessageBox.Show("Ingrese nombres y apellidos");
-
+            // Nombres y Apellidos
+            if (txtNombres.Text.Trim() == "")
                 return false;
 
-            }
-
-
-
-            if (!int.TryParse(txtEdad.Text, out _))
-
-            {
-
-                MessageBox.Show("Edad inválida");
-
+            if (txtApellidos.Text.Trim() == "")
                 return false;
 
-            }  
-                    
-
-
-            
-            if (cmbGenero.SelectedValue == null ||
-
-              cmbDistrito.SelectedValue == null ||
-
-              cmbProcedencia.SelectedValue == null ||
-
-              cmbCondicion.SelectedValue == null ||
-
-              cmbApoderado.SelectedValue == null)
-
-            {
-            
-                MessageBox.Show("Seleccione todos los campos obligatorios");
-
+            // Edad
+            if (txtEdad.Text == "" || !int.TryParse(txtEdad.Text, out _))
                 return false;
 
-            }
+            // Correo
+            if (txtCorreo1.Text == "" || !txtCorreo1.Text.Contains("@"))
+                return false;
 
+            // Teléfono
+            if (txtTelf1.Text == "" || !int.TryParse(txtTelf1.Text, out _))
+                return false;
 
+            // Combos (FK)
+            if (cmbGenero.SelectedIndex == -1)
+                return false;
+
+            if (cmbDistrito.SelectedIndex == -1)
+                return false;
+
+            if (cmbProcedencia.SelectedIndex == -1)
+                return false;
+
+            if (cmbCondicion.SelectedIndex == -1)
+                return false;
+
+            if (cmbApoderado.SelectedIndex == -1)
+                return false;
 
             return true;
-
         }
-          */
-
-
-        // =========================
-
-        // LIMPIAR
-
-        // =========================
-        /*
-        private void Limpiar()
-            
+        private void LimpiarFormulario()
         {
+            // TextBox
+            textBox11.Clear();
+            textBox9.Clear();
+            textBox8.Clear();
+            textBox7.Clear();
+            textBox1.Clear();
+            textBox3.Clear();
+            textBox2.Clear();
+            textBox5.Clear();
+            textBox4.Clear();
 
-            txtDni.Clear();
+            // DateTime
+            dateTimePicker2.Value = DateTime.Now;
 
-            txtNombres.Clear();
+            // ComboBox
+            comboBox5.SelectedIndex = -1;
+            comboBox4.SelectedIndex = -1;
+            comboBox3.SelectedIndex = -1;
+            comboBox2.SelectedIndex = -1;
+            comboBox1.SelectedIndex = -1;
 
-            txtApellidos.Clear();
-
-            txtEdad.Clear();
-
-            txtCorreo1.Clear();
-
-            txtCorreo2.Clear();
-
-            txtTelf1.Clear();
-
-            txtTelf2.Clear();
-
-
-
-            cmbGenero.SelectedIndex = -1;
-
-            cmbDistrito.SelectedIndex = -1;
-
-            cmbProcedencia.SelectedIndex = -1;
-
-            cmbCondicion.SelectedIndex = -1;
-
-            cmbApoderado.SelectedIndex = -1;
-
-
-
-            dtpFechaNacimiento.Value = DateTime.Now;
-
-
-
+            // Reset ID
             idEstudiante = 0;
-
-            dgvEstudiantes.ClearSelection();
-
         }
 
-        */
+        private void Form1_Estudiante_Load(object sender, EventArgs e)
+        {
+            // GENERO
+            comboBox5.SelectedIndex = -1;
+            comboBox5.DataSource = dal.ListarGeneros();
+            comboBox5.DisplayMember = "nombre_genero";
+            comboBox5.ValueMember = "id_genero";
 
-        // =========================
+            // DISTRITO
+            comboBox4.SelectedIndex = -1;
+            comboBox4.DataSource = dal.ListarDistritos();
+            comboBox4.DisplayMember = "nombre_distrito";
+            comboBox4.ValueMember = "id_distrito";
 
-        // CARGAR DATOS GRID
+            // PROCEDENCIA
+            comboBox3.SelectedIndex = -1;
+            comboBox3.DataSource = dal.ListarProcedencias();
+            comboBox3.DisplayMember = "descripcion";
+            comboBox3.ValueMember = "id_procedencia";
 
-        // =========================
+            // CONDICION
+            comboBox2.SelectedIndex = -1;
+            comboBox2.DataSource = dal.ListarCondiciones();
+            comboBox2.DisplayMember = "nombre_condicion";
+            comboBox2.ValueMember = "id_condicion";
+
+            // APODERADO
+            comboBox1.SelectedIndex = -1;
+            comboBox1.DataSource = dal.ListarApoderados();
+            comboBox1.DisplayMember = "nombre";
+            comboBox1.ValueMember = "id_apoderado";
+
+        }
 
         private void dgvEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-            
         {
-
-            if (e.RowIndex < 0) return;
-
-
-
-            DataGridViewRow fila = dgvEstudiantes.Rows[e.RowIndex];
-
-
-
-            idEstudiante = Convert.ToInt32(fila.Cells["id_estudiante"].Value);
-
-
-
-            txtDni.Text = fila.Cells["dni"].Value.ToString();
-
-            txtNombres.Text = fila.Cells["nombres"].Value.ToString();
-
-            txtApellidos.Text = fila.Cells["apellidos"].Value.ToString();
-
-            /*txtEdad.Text = fila.Cells["edad"].Value.ToString();*/
-
-            txtCorreo1.Text = fila.Cells["correo1"].Value.ToString();
-
-            txtCorreo2.Text = fila.Cells["correo2"].Value.ToString();
-
-            txtTelf1.Text = fila.Cells["telefono1"].Value.ToString();
-
-            txtTelf2.Text = fila.Cells["telefono2"].Value.ToString();
-
-
-
-            cmbGenero.SelectedValue = fila.Cells["id_genero"].Value;
-
-            /*cmbDistrito.SelectedValue = fila.Cells["id_distrito"].Value;
-
-            cmbProcedencia.SelectedValue = fila.Cells["id_procedencia"].Value;
-
-            cmbCondicion.SelectedValue = fila.Cells["id_condicion"].Value;
-
-            cmbApoderado.SelectedValue = fila.Cells["id_apoderado"].Value;*/
-
-
-
-            if (fila.Cells["fecha_nacimiento"].Value != DBNull.Value)
-
+            if (e.RowIndex >= 0)
             {
+                idEstudiante = Convert.ToInt32(dgvEstudiantes.CurrentRow.Cells["id_estudiante"].Value);
 
-                /*dtpFechaNacimiento.Value = Convert.ToDateTime(fila.Cells["fecha_nacimiento"].Value);*/
+                textBox11.Text = dgvEstudiantes.CurrentRow.Cells["id_estudiante"].Value.ToString();
+                textBox9.Text = dgvEstudiantes.CurrentRow.Cells["dni"].Value.ToString();
+                textBox8.Text = dgvEstudiantes.CurrentRow.Cells["nombres"].Value.ToString();
+                textBox7.Text = dgvEstudiantes.CurrentRow.Cells["apellidos"].Value.ToString();
+                textBox1.Text = dgvEstudiantes.CurrentRow.Cells["edad"].Value.ToString();
+                textBox3.Text = dgvEstudiantes.CurrentRow.Cells["correo1"].Value.ToString();
+                textBox2.Text = dgvEstudiantes.CurrentRow.Cells["correo2"].Value.ToString();
+                textBox5.Text = dgvEstudiantes.CurrentRow.Cells["telefono1"].Value.ToString();
+                textBox4.Text = dgvEstudiantes.CurrentRow.Cells["telefono2"].Value.ToString();
 
+                comboBox5.Text = dgvEstudiantes.CurrentRow.Cells["nombre_genero"].Value.ToString();
+                comboBox4.Text = dgvEstudiantes.CurrentRow.Cells["nombre_distrito"].Value.ToString();
+                comboBox3.Text = dgvEstudiantes.CurrentRow.Cells["procedencia"].Value.ToString();
+                comboBox2.Text = dgvEstudiantes.CurrentRow.Cells["nombre_condicion"].Value.ToString();
+                comboBox1.Text = dgvEstudiantes.CurrentRow.Cells["apoderado"].Value.ToString();
+
+
+                dateTimePicker2.Value = Convert.ToDateTime(dgvEstudiantes.CurrentRow.Cells["fecha_nacimiento"].Value);
             }
-
         }
 
-        
+        private void BTNMOSTRAR_Click(object sender, EventArgs e)
+        {
+            dgvEstudiantes.DataSource = dal.ListarEstudiantes();
+        }
 
-        // =========================
-
-        // BOTÓN CERRAR
-
-        // =========================
+        private void txtEstudiante_TextChanged(object sender, EventArgs e)
+        {
+            dgvEstudiantes.DataSource = dal.BuscarEstudiante(txtBuscar.Text);
+        }
 
         private void BTNCERRAR_Click(object sender, EventArgs e)
-
         {
+            DialogResult r = MessageBox.Show(
+            "¿Quieres cerrar el formulario?",
+            "Confirmación",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+             );
 
-            Close();
+            if (r == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
 
         }
 
-    }
+        private void label21_Click(object sender, EventArgs e)
+        {
 
-}*/
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

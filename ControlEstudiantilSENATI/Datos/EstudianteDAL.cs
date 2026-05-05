@@ -1,9 +1,11 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using System.Data;
-
 using System.Data.SqlClient;
-
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ControlEstudiantilSENATI.Datos;
 using ControlEstudiantilSENATI.Entidades;
 
 
@@ -18,338 +20,197 @@ namespace ControlEstudiantilSENATI.Datos
 
         Conexion cn = new Conexion();
 
-
-
+        // =========================
+        // LISTAS (combobox)
         // =========================
 
-        // LISTAR ESTUDIANTES
+        public DataTable ListarDistritos()
+        {
+            using (SqlConnection con = cn.GetConexion())
+            {
+                SqlDataAdapter da = new SqlDataAdapter(
+                    "SELECT id_distrito, nombre_distrito FROM distrito",
+                    con
+                );
 
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        public DataTable ListarGeneros()
+        {
+            using (SqlConnection con = cn.GetConexion())
+            {
+                SqlDataAdapter da = new SqlDataAdapter(
+                    "SELECT id_genero, nombre_genero FROM genero",
+                    con
+                );
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        public DataTable ListarCondiciones()
+        {
+            using (SqlConnection con = cn.GetConexion())
+            {
+                SqlDataAdapter da = new SqlDataAdapter(
+                    "SELECT id_condicion, nombre_condicion FROM condicion",
+                    con
+                );
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        public DataTable ListarProcedencias()
+        {
+            using (SqlConnection con = cn.GetConexion())
+            {
+                SqlDataAdapter da = new SqlDataAdapter(
+                    "SELECT id_procedencia, descripcion FROM procedencia",
+                    con
+                );
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        public DataTable ListarApoderados()
+        {
+            using (SqlConnection con = cn.GetConexion())
+            {
+                SqlDataAdapter da = new SqlDataAdapter(
+                    "SELECT id_apoderado, nombres + ' ' + apellidos AS nombre FROM apoderado",
+                    con
+                );
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        // =========================
+        // LISTAR / BUSCAR
         // =========================
 
         public DataTable ListarEstudiantes()
-
         {
-
             using (SqlConnection con = cn.GetConexion())
-
             {
-
-                SqlDataAdapter da = new SqlDataAdapter(
-
-                  "SELECT * FROM vw_Estudiantes", con);
-
-
-
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM vw_Estudiantes", con);
                 DataTable dt = new DataTable();
-
                 da.Fill(dt);
-
                 return dt;
-
             }
-
         }
-
-
-
-
-
-        // =========================
-
-        // BUSCAR ESTUDIANTE
-
-        // =========================
 
         public DataTable BuscarEstudiante(string texto)
-
         {
-
             using (SqlConnection con = cn.GetConexion())
-
             {
+                SqlCommand cmd = new SqlCommand("sp_BuscarEstudiante", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@TextoBusqueda", texto);
 
-                SqlDataAdapter da = new SqlDataAdapter(
-
-                  @"SELECT * FROM estudiante
-
-           WHERE nombres LIKE '%' + @texto + '%'
-
-             OR apellidos LIKE '%' + @texto + '%'
-
-             OR dni LIKE '%' + @texto + '%'", con);
-
-
-
-                da.SelectCommand.Parameters.AddWithValue("@texto", texto);
-
-
-
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
-
                 da.Fill(dt);
-
                 return dt;
-
             }
-
         }
 
-
-
         // =========================
-
-        // INSERTAR ESTUDIANTE
-
+        // INSERTAR
         // =========================
 
         public string InsertarEstudiante(Estudiante e)
-
         {
-
-            try
-
+            using (SqlConnection con = cn.GetConexion())
             {
+                SqlCommand cmd = new SqlCommand("sp_InsertarEstudiante", con);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                using (SqlConnection con = cn.GetConexion())
+                cmd.Parameters.AddWithValue("@IdDistrito", e.IdDistrito);
+                cmd.Parameters.AddWithValue("@Dni", e.Dni);
+                cmd.Parameters.AddWithValue("@Nombres", e.Nombres);
+                cmd.Parameters.AddWithValue("@Apellidos", e.Apellidos);
+                cmd.Parameters.AddWithValue("@IdGenero", e.IdGenero);
+                cmd.Parameters.AddWithValue("@FechaNacimiento", e.FechaNacimiento);
+                cmd.Parameters.AddWithValue("@Edad", e.Edad);
+                cmd.Parameters.AddWithValue("@Correo1", e.Correo1);
+                cmd.Parameters.AddWithValue("@Correo2", (object)e.Correo2 ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@Telefono1", e.Telefono1);
+                cmd.Parameters.AddWithValue("@Telefono2", (object)e.Telefono2 ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@IdProcedencia", e.IdProcedencia);
+                cmd.Parameters.AddWithValue("@IdCondicion", e.IdCondicion);
+                cmd.Parameters.AddWithValue("@IdApoderado", e.IdApoderado);
 
-                {
-
-                    SqlCommand cmd = new SqlCommand(
-
-                      @"INSERT INTO estudiante
-
-            (id_distrito, dni, nombres, apellidos, id_genero,
-
-             fecha_nacimiento, edad, correo1, correo2,
-
-             telefono1, telefono2, id_procedencia,
-
-             id_condicion, estado, id_apoderado)
-
-            VALUES
-
-            (@id_distrito, @dni, @nombres, @apellidos, @id_genero,
-
-             @fecha_nacimiento, @edad, @correo1, @correo2,
-
-             @telefono1, @telefono2, @id_procedencia,
-
-             @id_condicion, 1, @id_apoderado)", con);
-
-
-
-                    cmd.Parameters.AddWithValue("@id_distrito", e.IdDistrito);
-
-                    cmd.Parameters.AddWithValue("@dni", e.Dni);
-
-                    cmd.Parameters.AddWithValue("@nombres", e.Nombres);
-
-                    cmd.Parameters.AddWithValue("@apellidos", e.Apellidos);
-
-                    cmd.Parameters.AddWithValue("@id_genero", e.IdGenero);
-
-                    cmd.Parameters.AddWithValue("@fecha_nacimiento", e.FechaNacimiento);
-
-                    cmd.Parameters.AddWithValue("@edad", e.Edad);
-
-                    cmd.Parameters.AddWithValue("@correo1", e.Correo1);
-
-                    cmd.Parameters.AddWithValue("@correo2", (object)e.Correo2 ?? DBNull.Value);
-
-                    cmd.Parameters.AddWithValue("@telefono1", e.Telefono1);
-
-                    cmd.Parameters.AddWithValue("@telefono2", (object)e.Telefono2 ?? DBNull.Value);
-
-                    cmd.Parameters.AddWithValue("@id_procedencia", e.IdProcedencia);
-
-                    cmd.Parameters.AddWithValue("@id_condicion", e.IdCondicion);
-
-                    cmd.Parameters.AddWithValue("@id_apoderado", e.IdApoderado);
-
-
-
-                    con.Open();
-
-                    cmd.ExecuteNonQuery();
-
-                }
-
-
-
-                return "Estudiante registrado correctamente";
-
+                con.Open();
+                object result = cmd.ExecuteScalar();
+                return result != null ? result.ToString() : "No se recibió respuesta del servidor";
             }
-
-            catch (Exception ex)
-
-            {
-
-                return ex.Message;
-
-            }
-
         }
 
-
-
+        // =========================
+        // ACTUALIZAR
         // =========================
 
-        // MODIFICAR ESTUDIANTE
-
-        // =========================
-
-        public string ModificarEstudiante(Estudiante e)
-
+        public string ActualizarEstudiante(Estudiante e)
         {
-
-            try
-
+            using (SqlConnection con = cn.GetConexion())
             {
+                SqlCommand cmd = new SqlCommand("sp_ModificarEstudiante", con);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                using (SqlConnection con = cn.GetConexion())
+                cmd.Parameters.AddWithValue("@IdEstudiante", e.IdEstudiante);
+                cmd.Parameters.AddWithValue("@IdDistrito", e.IdDistrito);
+                cmd.Parameters.AddWithValue("@Dni", e.Dni);
+                cmd.Parameters.AddWithValue("@Nombres", e.Nombres);
+                cmd.Parameters.AddWithValue("@Apellidos", e.Apellidos);
+                cmd.Parameters.AddWithValue("@IdGenero", e.IdGenero);
+                cmd.Parameters.AddWithValue("@FechaNacimiento", e.FechaNacimiento);
+                cmd.Parameters.AddWithValue("@Edad", e.Edad);
+                cmd.Parameters.AddWithValue("@Correo1", e.Correo1);
+                cmd.Parameters.AddWithValue("@Correo2", (object)e.Correo2 ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@Telefono1", e.Telefono1);
+                cmd.Parameters.AddWithValue("@Telefono2", (object)e.Telefono2 ?? DBNull.Value);
+                cmd.Parameters.AddWithValue("@IdProcedencia", e.IdProcedencia);
+                cmd.Parameters.AddWithValue("@IdCondicion", e.IdCondicion);
+                cmd.Parameters.AddWithValue("@IdApoderado", e.IdApoderado);
 
-                {
-
-                    SqlCommand cmd = new SqlCommand(
-
-                      @"UPDATE estudiante SET
-
-              id_distrito = @id_distrito,
-
-              dni = @dni,
-
-              nombres = @nombres,
-
-              apellidos = @apellidos,
-
-              id_genero = @id_genero,
-
-              fecha_nacimiento = @fecha_nacimiento,
-
-              edad = @edad,
-
-              correo1 = @correo1,
-
-              correo2 = @correo2,
-
-              telefono1 = @telefono1,
-
-              telefono2 = @telefono2,
-
-              id_procedencia = @id_procedencia,
-
-              id_condicion = @id_condicion,
-
-              id_apoderado = @id_apoderado
-
-            WHERE id_estudiante = @id_estudiante", con);
-
-
-
-                    cmd.Parameters.AddWithValue("@id_estudiante", e.IdEstudiante);
-
-                    cmd.Parameters.AddWithValue("@id_distrito", e.IdDistrito);
-
-                    cmd.Parameters.AddWithValue("@dni", e.Dni);
-
-                    cmd.Parameters.AddWithValue("@nombres", e.Nombres);
-
-                    cmd.Parameters.AddWithValue("@apellidos", e.Apellidos);
-
-                    cmd.Parameters.AddWithValue("@id_genero", e.IdGenero);
-
-                    cmd.Parameters.AddWithValue("@fecha_nacimiento", e.FechaNacimiento);
-
-                    cmd.Parameters.AddWithValue("@edad", e.Edad);
-
-                    cmd.Parameters.AddWithValue("@correo1", e.Correo1);
-
-                    cmd.Parameters.AddWithValue("@correo2", (object)e.Correo2 ?? DBNull.Value);
-
-                    cmd.Parameters.AddWithValue("@telefono1", e.Telefono1);
-
-                    cmd.Parameters.AddWithValue("@telefono2", (object)e.Telefono2 ?? DBNull.Value);
-
-                    cmd.Parameters.AddWithValue("@id_procedencia", e.IdProcedencia);
-
-                    cmd.Parameters.AddWithValue("@id_condicion", e.IdCondicion);
-
-                    cmd.Parameters.AddWithValue("@id_apoderado", e.IdApoderado);
-
-
-
-                    con.Open();
-
-                    cmd.ExecuteNonQuery();
-
-                }
-
-
-
-                return "Estudiante actualizado correctamente";
-
+                con.Open();
+                object result = cmd.ExecuteScalar();
+                return result != null ? result.ToString() : "No se recibió respuesta del servidor";
             }
-
-            catch (Exception ex)
-
-            {
-
-                return ex.Message;
-
-            }
-
         }
 
-
-
+        // =========================
+        // ELIMINAR (lógico)
         // =========================
 
-        // ELIMINAR (LOGICO)
-
-        // =========================
-
-        public string EliminarEstudiante(int id)
-
+        public string EliminarEstudiante(Estudiante e)
         {
-
-            try
-
+            using (SqlConnection con = cn.GetConexion())
             {
+                SqlCommand cmd = new SqlCommand("sp_EliminarEstudiante", con);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                using (SqlConnection con = cn.GetConexion())
+                cmd.Parameters.AddWithValue("@IdEstudiante", e.IdEstudiante);
 
-                {
-
-                    SqlCommand cmd = new SqlCommand(
-
-                      "UPDATE estudiante SET estado = 0 WHERE id_estudiante = @id", con);
-
-
-
-                    cmd.Parameters.AddWithValue("@id", id);
-
-
-
-                    con.Open();
-
-                    cmd.ExecuteNonQuery();
-
-                }
-
-
-
-                return "Estudiante eliminado correctamente";
-
+                con.Open();
+                object result = cmd.ExecuteScalar();
+                return result != null ? result.ToString() : "No se recibió respuesta del servidor";
             }
-
-            catch (Exception ex)
-
-            {
-
-                return ex.Message;
-
-            }
-
         }
 
     }

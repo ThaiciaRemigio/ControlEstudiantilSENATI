@@ -1,6 +1,9 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
 
@@ -12,7 +15,7 @@ namespace ControlEstudiantilSENATI.Datos
 
     {
 
-        // 🔴 Cambia si tu SQL Server tiene otro nombre o instancia
+        
 
         private string cadena = @"Server=(localdb)\MSSQLLocalDB;Database=ControlEstudiantilSenati;Trusted_Connection=True;";
 
