@@ -58,7 +58,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(941, 71);
+            this.panel1.Size = new System.Drawing.Size(941, 55);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -66,7 +66,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(295, 25);
+            this.label1.Location = new System.Drawing.Point(333, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(255, 46);
             this.label1.TabIndex = 1;
@@ -84,7 +84,7 @@
             this.Frm_Busqueda.Controls.Add(this.label3);
             this.Frm_Busqueda.Controls.Add(this.label2);
             this.Frm_Busqueda.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Frm_Busqueda.Location = new System.Drawing.Point(12, 88);
+            this.Frm_Busqueda.Location = new System.Drawing.Point(12, 67);
             this.Frm_Busqueda.Name = "Frm_Busqueda";
             this.Frm_Busqueda.Size = new System.Drawing.Size(929, 138);
             this.Frm_Busqueda.TabIndex = 1;
@@ -142,28 +142,32 @@
             // 
             // BTNGENERAR
             // 
-            this.BTNGENERAR.Location = new System.Drawing.Point(241, 82);
+            this.BTNGENERAR.BackColor = System.Drawing.Color.Navy;
+            this.BTNGENERAR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BTNGENERAR.Location = new System.Drawing.Point(241, 74);
             this.BTNGENERAR.Name = "BTNGENERAR";
-            this.BTNGENERAR.Size = new System.Drawing.Size(183, 34);
+            this.BTNGENERAR.Size = new System.Drawing.Size(183, 42);
             this.BTNGENERAR.TabIndex = 6;
             this.BTNGENERAR.Text = "GENERAR";
-            this.BTNGENERAR.UseVisualStyleBackColor = true;
+            this.BTNGENERAR.UseVisualStyleBackColor = false;
             this.BTNGENERAR.Click += new System.EventHandler(this.button1_Click);
             // 
             // BTNLIMPIAR
             // 
-            this.BTNLIMPIAR.Location = new System.Drawing.Point(455, 82);
+            this.BTNLIMPIAR.BackColor = System.Drawing.Color.Navy;
+            this.BTNLIMPIAR.ForeColor = System.Drawing.Color.White;
+            this.BTNLIMPIAR.Location = new System.Drawing.Point(462, 74);
             this.BTNLIMPIAR.Name = "BTNLIMPIAR";
-            this.BTNLIMPIAR.Size = new System.Drawing.Size(183, 34);
+            this.BTNLIMPIAR.Size = new System.Drawing.Size(183, 42);
             this.BTNLIMPIAR.TabIndex = 7;
             this.BTNLIMPIAR.Text = "LIMPIAR";
-            this.BTNLIMPIAR.UseVisualStyleBackColor = true;
+            this.BTNLIMPIAR.UseVisualStyleBackColor = false;
             this.BTNLIMPIAR.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 269);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 248);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(929, 242);
             this.dataGridView1.TabIndex = 2;
@@ -172,7 +176,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(70, 241);
+            this.label5.Location = new System.Drawing.Point(70, 220);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 16);
             this.label5.TabIndex = 3;
@@ -181,49 +185,55 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 232);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 211);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(52, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // BTNPDF
             // 
+            this.BTNPDF.BackColor = System.Drawing.Color.Navy;
             this.BTNPDF.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNPDF.Location = new System.Drawing.Point(416, 535);
+            this.BTNPDF.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BTNPDF.Location = new System.Drawing.Point(416, 509);
             this.BTNPDF.Name = "BTNPDF";
             this.BTNPDF.Size = new System.Drawing.Size(154, 37);
             this.BTNPDF.TabIndex = 5;
             this.BTNPDF.Text = "EXPORTAR PDF";
-            this.BTNPDF.UseVisualStyleBackColor = true;
+            this.BTNPDF.UseVisualStyleBackColor = false;
             // 
             // BTNIMPRIMIR
             // 
+            this.BTNIMPRIMIR.BackColor = System.Drawing.Color.Navy;
             this.BTNIMPRIMIR.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNIMPRIMIR.Location = new System.Drawing.Point(591, 535);
+            this.BTNIMPRIMIR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BTNIMPRIMIR.Location = new System.Drawing.Point(591, 509);
             this.BTNIMPRIMIR.Name = "BTNIMPRIMIR";
             this.BTNIMPRIMIR.Size = new System.Drawing.Size(154, 37);
             this.BTNIMPRIMIR.TabIndex = 6;
             this.BTNIMPRIMIR.Text = "IMPRIMIR";
-            this.BTNIMPRIMIR.UseVisualStyleBackColor = true;
+            this.BTNIMPRIMIR.UseVisualStyleBackColor = false;
             // 
             // BTNCERRAR
             // 
+            this.BTNCERRAR.BackColor = System.Drawing.Color.Navy;
             this.BTNCERRAR.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNCERRAR.Location = new System.Drawing.Point(770, 535);
+            this.BTNCERRAR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BTNCERRAR.Location = new System.Drawing.Point(770, 509);
             this.BTNCERRAR.Name = "BTNCERRAR";
             this.BTNCERRAR.Size = new System.Drawing.Size(154, 37);
             this.BTNCERRAR.TabIndex = 7;
             this.BTNCERRAR.Text = "CERRAR";
-            this.BTNCERRAR.UseVisualStyleBackColor = true;
+            this.BTNCERRAR.UseVisualStyleBackColor = false;
             // 
             // Form8_Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(950, 584);
+            this.ClientSize = new System.Drawing.Size(950, 559);
             this.Controls.Add(this.BTNCERRAR);
             this.Controls.Add(this.BTNIMPRIMIR);
             this.Controls.Add(this.BTNPDF);

@@ -41,6 +41,10 @@
             this.BTNGUARDAR = new System.Windows.Forms.Button();
             this.BTNNUEVO = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtotros = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.BTNMOSTRAR = new System.Windows.Forms.Button();
             this.txtCiclo = new System.Windows.Forms.TextBox();
             this.txtTurno = new System.Windows.Forms.TextBox();
@@ -60,10 +64,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtObservaciones = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtotros = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatricula)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -75,7 +75,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(364, 8);
+            this.label1.Location = new System.Drawing.Point(342, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(269, 23);
             this.label1.TabIndex = 0;
@@ -230,6 +230,36 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Frm_Matricula";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(532, 34);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(216, 23);
+            this.dateTimePicker1.TabIndex = 33;
+            // 
+            // txtotros
+            // 
+            this.txtotros.Location = new System.Drawing.Point(152, 236);
+            this.txtotros.Name = "txtotros";
+            this.txtotros.Size = new System.Drawing.Size(608, 23);
+            this.txtotros.TabIndex = 32;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(31, 236);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(47, 16);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "Otros : ";
+            // 
+            // txtObservaciones
+            // 
+            this.txtObservaciones.Location = new System.Drawing.Point(533, 194);
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(217, 23);
+            this.txtObservaciones.TabIndex = 30;
             // 
             // BTNMOSTRAR
             // 
@@ -390,36 +420,6 @@
             this.label2.Size = new System.Drawing.Size(84, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "ID Matricula : ";
-            // 
-            // txtObservaciones
-            // 
-            this.txtObservaciones.Location = new System.Drawing.Point(533, 194);
-            this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(217, 23);
-            this.txtObservaciones.TabIndex = 30;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(31, 236);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(47, 16);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "Otros : ";
-            // 
-            // txtotros
-            // 
-            this.txtotros.Location = new System.Drawing.Point(152, 236);
-            this.txtotros.Name = "txtotros";
-            this.txtotros.Size = new System.Drawing.Size(608, 23);
-            this.txtotros.TabIndex = 32;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(532, 34);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(216, 23);
-            this.dateTimePicker1.TabIndex = 33;
             // 
             // Form2_Matricula
             // 
