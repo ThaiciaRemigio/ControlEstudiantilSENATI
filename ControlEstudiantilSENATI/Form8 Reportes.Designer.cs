@@ -67,7 +67,7 @@
             this.Frm_Busqueda.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Frm_Busqueda.Location = new System.Drawing.Point(12, 88);
             this.Frm_Busqueda.Name = "Frm_Busqueda";
-            this.Frm_Busqueda.Size = new System.Drawing.Size(849, 131);
+            this.Frm_Busqueda.Size = new System.Drawing.Size(849, 139);
             this.Frm_Busqueda.TabIndex = 1;
             this.Frm_Busqueda.TabStop = false;
             this.Frm_Busqueda.Text = "Frm_Usuario";
