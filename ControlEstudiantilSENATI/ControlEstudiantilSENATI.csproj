@@ -73,6 +73,12 @@
     <Compile Include="Form5 Plan de Estudios.Designer.cs">
       <DependentUpon>Form5 Plan de Estudios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form6 Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6 Pagos.Designer.cs">
+      <DependentUpon>Form6 Pagos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulario\Form1 Estudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form5 Plan de Estudios.resx">
       <DependentUpon>Form5 Plan de Estudios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6 Pagos.resx">
+      <DependentUpon>Form6 Pagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario\Form1 Estudiante.resx">
       <DependentUpon>Form1 Estudiante.cs</DependentUpon>
