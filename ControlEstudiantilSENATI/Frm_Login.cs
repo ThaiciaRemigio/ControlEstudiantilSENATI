@@ -15,6 +15,8 @@ namespace ControlEstudiantilSENATI
         public Frm_Login()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.MaximizeBox = false;
         }
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)

@@ -44,7 +44,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(2, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(420, 486);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -55,7 +55,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(188, 141);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(36, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -86,7 +86,7 @@
             // textPIN
             // 
             this.textPIN.Location = new System.Drawing.Point(75, 252);
-            this.textPIN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textPIN.Margin = new System.Windows.Forms.Padding(2);
             this.textPIN.MaxLength = 4;
             this.textPIN.Multiline = true;
             this.textPIN.Name = "textPIN";
@@ -115,7 +115,7 @@
             this.BTNCONTINUAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCONTINUAR.ForeColor = System.Drawing.Color.White;
             this.BTNCONTINUAR.Location = new System.Drawing.Point(102, 333);
-            this.BTNCONTINUAR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNCONTINUAR.Margin = new System.Windows.Forms.Padding(2);
             this.BTNCONTINUAR.Name = "BTNCONTINUAR";
             this.BTNCONTINUAR.Size = new System.Drawing.Size(200, 47);
             this.BTNCONTINUAR.TabIndex = 7;
@@ -135,9 +135,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_PinDeSeguridad";
             this.Text = "Form_PinDeSeguridad";
+            this.Load += new System.EventHandler(this.Form_PinDeSeguridad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

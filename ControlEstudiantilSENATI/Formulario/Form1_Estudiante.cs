@@ -14,6 +14,8 @@ namespace ControlEstudiantilSENATI
         public Form1_Estudiante()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void BTNNUEVO_Click(object sender, EventArgs e)
@@ -114,42 +116,42 @@ namespace ControlEstudiantilSENATI
         private bool Validar()
         {
             // DNI
-            if (txtDni.Text.Length != 8 || !int.TryParse(txtDni.Text, out _))
+            if (textBox9.Text.Length != 8 || !int.TryParse(textBox9.Text, out _))
                 return false;
 
             // Nombres y Apellidos
-            if (txtNombres.Text.Trim() == "")
+            if (textBox8.Text.Trim() == "")
                 return false;
 
-            if (txtApellidos.Text.Trim() == "")
+            if (textBox7.Text.Trim() == "")
                 return false;
 
             // Edad
-            if (txtEdad.Text == "" || !int.TryParse(txtEdad.Text, out _))
+            if (textBox1.Text == "" || !int.TryParse(textBox1.Text, out _))
                 return false;
 
             // Correo
-            if (txtCorreo1.Text == "" || !txtCorreo1.Text.Contains("@"))
+            if (textBox3.Text == "" || !textBox3.Text.Contains("@"))
                 return false;
 
             // Teléfono
-            if (txtTelf1.Text == "" || !int.TryParse(txtTelf1.Text, out _))
+            if (textBox5.Text == "" || !int.TryParse(textBox5.Text, out _))
                 return false;
 
-            // Combos (FK)
-            if (cmbGenero.SelectedIndex == -1)
+            // Combos
+            if (comboBox5.SelectedIndex == -1)
                 return false;
 
-            if (cmbDistrito.SelectedIndex == -1)
+            if (comboBox4.SelectedIndex == -1)
                 return false;
 
-            if (cmbProcedencia.SelectedIndex == -1)
+            if (comboBox3.SelectedIndex == -1)
                 return false;
 
-            if (cmbCondicion.SelectedIndex == -1)
+            if (comboBox2.SelectedIndex == -1)
                 return false;
 
-            if (cmbApoderado.SelectedIndex == -1)
+            if (comboBox1.SelectedIndex == -1)
                 return false;
 
             return true;

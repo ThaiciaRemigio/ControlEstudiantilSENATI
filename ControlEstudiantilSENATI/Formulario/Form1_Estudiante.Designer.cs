@@ -659,7 +659,7 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.ForeColor = System.Drawing.Color.DarkGray;
+            this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Femenino.",
@@ -679,7 +679,7 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.ForeColor = System.Drawing.Color.DarkGray;
+            this.comboBox2.ForeColor = System.Drawing.Color.Black;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Femenino.",
@@ -702,7 +702,7 @@
             // 
             // comboBox3
             // 
-            this.comboBox3.ForeColor = System.Drawing.Color.DarkGray;
+            this.comboBox3.ForeColor = System.Drawing.Color.Black;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Femenino.",
@@ -716,7 +716,7 @@
             // 
             // comboBox4
             // 
-            this.comboBox4.ForeColor = System.Drawing.Color.DarkGray;
+            this.comboBox4.ForeColor = System.Drawing.Color.Black;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "Femenino.",
@@ -730,7 +730,7 @@
             // 
             // comboBox5
             // 
-            this.comboBox5.ForeColor = System.Drawing.Color.DarkGray;
+            this.comboBox5.ForeColor = System.Drawing.Color.Black;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "Femenino.",

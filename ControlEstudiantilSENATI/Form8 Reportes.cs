@@ -15,6 +15,8 @@ namespace ControlEstudiantilSENATI
         public Form8_Reportes()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -30,6 +32,26 @@ namespace ControlEstudiantilSENATI
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form8_Reportes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNCERRAR_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show(
+            "¿Quieres cerrar el formulario?",
+            "Confirmación",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+             );
+
+            if (r == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

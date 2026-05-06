@@ -30,28 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8_Reportes));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Frm_Busqueda = new System.Windows.Forms.GroupBox();
+            this.BTNLIMPIAR = new System.Windows.Forms.Button();
+            this.BTNGENERAR = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.BTNGENERAR = new System.Windows.Forms.Button();
-            this.BTNLIMPIAR = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTNPDF = new System.Windows.Forms.Button();
             this.BTNIMPRIMIR = new System.Windows.Forms.Button();
             this.BTNCERRAR = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Frm_Busqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,6 +63,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(941, 70);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(14, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 70);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
@@ -94,6 +104,51 @@
             this.Frm_Busqueda.TabStop = false;
             this.Frm_Busqueda.Text = "Frm_Usuario";
             // 
+            // BTNLIMPIAR
+            // 
+            this.BTNLIMPIAR.BackColor = System.Drawing.Color.Navy;
+            this.BTNLIMPIAR.ForeColor = System.Drawing.Color.White;
+            this.BTNLIMPIAR.Location = new System.Drawing.Point(462, 74);
+            this.BTNLIMPIAR.Name = "BTNLIMPIAR";
+            this.BTNLIMPIAR.Size = new System.Drawing.Size(183, 42);
+            this.BTNLIMPIAR.TabIndex = 7;
+            this.BTNLIMPIAR.Text = "LIMPIAR";
+            this.BTNLIMPIAR.UseVisualStyleBackColor = false;
+            this.BTNLIMPIAR.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // BTNGENERAR
+            // 
+            this.BTNGENERAR.BackColor = System.Drawing.Color.Navy;
+            this.BTNGENERAR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BTNGENERAR.Location = new System.Drawing.Point(241, 74);
+            this.BTNGENERAR.Name = "BTNGENERAR";
+            this.BTNGENERAR.Size = new System.Drawing.Size(183, 42);
+            this.BTNGENERAR.TabIndex = 6;
+            this.BTNGENERAR.Text = "GENERAR";
+            this.BTNGENERAR.UseVisualStyleBackColor = false;
+            this.BTNGENERAR.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(725, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(187, 23);
+            this.textBox1.TabIndex = 5;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(414, 25);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker2.TabIndex = 4;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(108, 25);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -121,51 +176,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Fecha Inicio :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(108, 25);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 3;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(414, 25);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker2.TabIndex = 4;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(725, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 23);
-            this.textBox1.TabIndex = 5;
-            // 
-            // BTNGENERAR
-            // 
-            this.BTNGENERAR.BackColor = System.Drawing.Color.Navy;
-            this.BTNGENERAR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BTNGENERAR.Location = new System.Drawing.Point(241, 74);
-            this.BTNGENERAR.Name = "BTNGENERAR";
-            this.BTNGENERAR.Size = new System.Drawing.Size(183, 42);
-            this.BTNGENERAR.TabIndex = 6;
-            this.BTNGENERAR.Text = "GENERAR";
-            this.BTNGENERAR.UseVisualStyleBackColor = false;
-            this.BTNGENERAR.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // BTNLIMPIAR
-            // 
-            this.BTNLIMPIAR.BackColor = System.Drawing.Color.Navy;
-            this.BTNLIMPIAR.ForeColor = System.Drawing.Color.White;
-            this.BTNLIMPIAR.Location = new System.Drawing.Point(462, 74);
-            this.BTNLIMPIAR.Name = "BTNLIMPIAR";
-            this.BTNLIMPIAR.Size = new System.Drawing.Size(183, 42);
-            this.BTNLIMPIAR.TabIndex = 7;
-            this.BTNLIMPIAR.Text = "LIMPIAR";
-            this.BTNLIMPIAR.UseVisualStyleBackColor = false;
-            this.BTNLIMPIAR.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -230,16 +240,7 @@
             this.BTNCERRAR.TabIndex = 7;
             this.BTNCERRAR.Text = "CERRAR";
             this.BTNCERRAR.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(14, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 70);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.BTNCERRAR.Click += new System.EventHandler(this.BTNCERRAR_Click);
             // 
             // Form8_Reportes
             // 
@@ -256,13 +257,14 @@
             this.Controls.Add(this.Frm_Busqueda);
             this.Controls.Add(this.panel1);
             this.Name = "Form8_Reportes";
+            this.Load += new System.EventHandler(this.Form8_Reportes_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Frm_Busqueda.ResumeLayout(false);
             this.Frm_Busqueda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

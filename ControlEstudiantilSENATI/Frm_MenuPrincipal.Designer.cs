@@ -108,7 +108,7 @@
             this.panel1.Controls.Add(this.btnInicio);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(9, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(209, 692);
             this.panel1.TabIndex = 0;
@@ -120,13 +120,14 @@
             this.btnUsuarios.ForeColor = System.Drawing.Color.White;
             this.btnUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.Image")));
             this.btnUsuarios.Location = new System.Drawing.Point(15, 476);
-            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(2);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(176, 48);
             this.btnUsuarios.TabIndex = 11;
             this.btnUsuarios.Text = "     Usuarios";
             this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnSalir
             // 
@@ -135,7 +136,7 @@
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.Location = new System.Drawing.Point(15, 632);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(176, 48);
             this.btnSalir.TabIndex = 10;
@@ -151,13 +152,14 @@
             this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
             this.btnConfiguracion.Image = ((System.Drawing.Image)(resources.GetObject("btnConfiguracion.Image")));
             this.btnConfiguracion.Location = new System.Drawing.Point(15, 580);
-            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfiguracion.Name = "btnConfiguracion";
             this.btnConfiguracion.Size = new System.Drawing.Size(176, 48);
             this.btnConfiguracion.TabIndex = 9;
             this.btnConfiguracion.Text = "   Configuración";
             this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConfiguracion.UseVisualStyleBackColor = false;
+            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
             // btnReportes
             // 
@@ -166,13 +168,14 @@
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.Location = new System.Drawing.Point(15, 528);
-            this.btnReportes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(2);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(176, 48);
             this.btnReportes.TabIndex = 8;
             this.btnReportes.Text = "   Reportes";
             this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnPagos
             // 
@@ -181,13 +184,14 @@
             this.btnPagos.ForeColor = System.Drawing.Color.White;
             this.btnPagos.Image = ((System.Drawing.Image)(resources.GetObject("btnPagos.Image")));
             this.btnPagos.Location = new System.Drawing.Point(15, 423);
-            this.btnPagos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPagos.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagos.Name = "btnPagos";
             this.btnPagos.Size = new System.Drawing.Size(176, 48);
             this.btnPagos.TabIndex = 7;
             this.btnPagos.Text = "   Pagos";
             this.btnPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPagos.UseVisualStyleBackColor = false;
+            this.btnPagos.Click += new System.EventHandler(this.btnPagos_Click);
             // 
             // btnPlandeEstudios
             // 
@@ -196,13 +200,14 @@
             this.btnPlandeEstudios.ForeColor = System.Drawing.Color.White;
             this.btnPlandeEstudios.Image = ((System.Drawing.Image)(resources.GetObject("btnPlandeEstudios.Image")));
             this.btnPlandeEstudios.Location = new System.Drawing.Point(15, 370);
-            this.btnPlandeEstudios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlandeEstudios.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlandeEstudios.Name = "btnPlandeEstudios";
             this.btnPlandeEstudios.Size = new System.Drawing.Size(176, 48);
             this.btnPlandeEstudios.TabIndex = 6;
             this.btnPlandeEstudios.Text = " Plan de Estudios";
             this.btnPlandeEstudios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPlandeEstudios.UseVisualStyleBackColor = false;
+            this.btnPlandeEstudios.Click += new System.EventHandler(this.btnPlandeEstudios_Click);
             // 
             // btnHorarios
             // 
@@ -211,13 +216,14 @@
             this.btnHorarios.ForeColor = System.Drawing.Color.White;
             this.btnHorarios.Image = ((System.Drawing.Image)(resources.GetObject("btnHorarios.Image")));
             this.btnHorarios.Location = new System.Drawing.Point(15, 318);
-            this.btnHorarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHorarios.Margin = new System.Windows.Forms.Padding(2);
             this.btnHorarios.Name = "btnHorarios";
             this.btnHorarios.Size = new System.Drawing.Size(176, 48);
             this.btnHorarios.TabIndex = 5;
             this.btnHorarios.Text = "   Horarios";
             this.btnHorarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHorarios.UseVisualStyleBackColor = false;
+            this.btnHorarios.Click += new System.EventHandler(this.btnHorarios_Click);
             // 
             // btnApoderados
             // 
@@ -226,13 +232,14 @@
             this.btnApoderados.ForeColor = System.Drawing.Color.White;
             this.btnApoderados.Image = ((System.Drawing.Image)(resources.GetObject("btnApoderados.Image")));
             this.btnApoderados.Location = new System.Drawing.Point(15, 265);
-            this.btnApoderados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnApoderados.Margin = new System.Windows.Forms.Padding(2);
             this.btnApoderados.Name = "btnApoderados";
             this.btnApoderados.Size = new System.Drawing.Size(176, 48);
             this.btnApoderados.TabIndex = 4;
             this.btnApoderados.Text = "   Apoderados";
             this.btnApoderados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnApoderados.UseVisualStyleBackColor = false;
+            this.btnApoderados.Click += new System.EventHandler(this.btnApoderados_Click);
             // 
             // btnMatricula
             // 
@@ -241,13 +248,14 @@
             this.btnMatricula.ForeColor = System.Drawing.Color.White;
             this.btnMatricula.Image = ((System.Drawing.Image)(resources.GetObject("btnMatricula.Image")));
             this.btnMatricula.Location = new System.Drawing.Point(15, 212);
-            this.btnMatricula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMatricula.Margin = new System.Windows.Forms.Padding(2);
             this.btnMatricula.Name = "btnMatricula";
             this.btnMatricula.Size = new System.Drawing.Size(176, 48);
             this.btnMatricula.TabIndex = 3;
             this.btnMatricula.Text = "   Matrícula";
             this.btnMatricula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMatricula.UseVisualStyleBackColor = false;
+            this.btnMatricula.Click += new System.EventHandler(this.btnMatricula_Click);
             // 
             // btnEstudiantes
             // 
@@ -256,7 +264,7 @@
             this.btnEstudiantes.ForeColor = System.Drawing.Color.White;
             this.btnEstudiantes.Image = ((System.Drawing.Image)(resources.GetObject("btnEstudiantes.Image")));
             this.btnEstudiantes.Location = new System.Drawing.Point(15, 159);
-            this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEstudiantes.Margin = new System.Windows.Forms.Padding(2);
             this.btnEstudiantes.Name = "btnEstudiantes";
             this.btnEstudiantes.Size = new System.Drawing.Size(176, 48);
             this.btnEstudiantes.TabIndex = 2;
@@ -272,7 +280,7 @@
             this.btnInicio.ForeColor = System.Drawing.Color.White;
             this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
             this.btnInicio.Location = new System.Drawing.Point(15, 106);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(176, 48);
             this.btnInicio.TabIndex = 1;
@@ -284,7 +292,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-5, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(223, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -304,7 +312,7 @@
             // 
             this.button11.BackColor = System.Drawing.Color.White;
             this.button11.Location = new System.Drawing.Point(223, 10);
-            this.button11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button11.Margin = new System.Windows.Forms.Padding(2);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(778, 88);
             this.button11.TabIndex = 3;
@@ -314,7 +322,7 @@
             // 
             this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
             this.button12.Location = new System.Drawing.Point(930, 36);
-            this.button12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button12.Margin = new System.Windows.Forms.Padding(2);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(42, 37);
             this.button12.TabIndex = 4;
@@ -337,7 +345,7 @@
             // 
             this.button13.BackColor = System.Drawing.Color.White;
             this.button13.Location = new System.Drawing.Point(223, 102);
-            this.button13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button13.Margin = new System.Windows.Forms.Padding(2);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(778, 245);
             this.button13.TabIndex = 7;
@@ -387,7 +395,7 @@
             // 
             this.button14.BackColor = System.Drawing.Color.White;
             this.button14.Location = new System.Drawing.Point(223, 362);
-            this.button14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button14.Margin = new System.Windows.Forms.Padding(2);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(190, 109);
             this.button14.TabIndex = 12;
@@ -398,7 +406,7 @@
             // 
             this.button15.BackColor = System.Drawing.Color.White;
             this.button15.Location = new System.Drawing.Point(431, 362);
-            this.button15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button15.Margin = new System.Windows.Forms.Padding(2);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(177, 109);
             this.button15.TabIndex = 13;
@@ -408,7 +416,7 @@
             // 
             this.button16.BackColor = System.Drawing.Color.White;
             this.button16.Location = new System.Drawing.Point(620, 362);
-            this.button16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button16.Margin = new System.Windows.Forms.Padding(2);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(188, 109);
             this.button16.TabIndex = 14;
@@ -418,7 +426,7 @@
             // 
             this.button17.BackColor = System.Drawing.Color.White;
             this.button17.Location = new System.Drawing.Point(812, 362);
-            this.button17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button17.Margin = new System.Windows.Forms.Padding(2);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(189, 109);
             this.button17.TabIndex = 15;
@@ -428,7 +436,7 @@
             // 
             this.button18.BackColor = System.Drawing.Color.White;
             this.button18.Location = new System.Drawing.Point(223, 486);
-            this.button18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button18.Margin = new System.Windows.Forms.Padding(2);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(778, 133);
             this.button18.TabIndex = 16;
@@ -722,9 +730,10 @@
             this.Controls.Add(this.button11);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_MenuPrincipal";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Frm_MenuPrincipal_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

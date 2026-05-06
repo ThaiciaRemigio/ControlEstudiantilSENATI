@@ -15,6 +15,28 @@ namespace ControlEstudiantilSENATI
         public Form6_Pagos()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+
+        private void Form6_Pagos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNCERRAR_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show(
+            "¿Quieres cerrar el formulario?",
+            "Confirmación",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+             );
+
+            if (r == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

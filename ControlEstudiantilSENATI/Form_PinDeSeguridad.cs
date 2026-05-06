@@ -15,6 +15,8 @@ namespace ControlEstudiantilSENATI
         public Form_PinDeSeguridad()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.MaximizeBox = false;
         }
 
         private void textPIN_TextChanged(object sender, EventArgs e)
@@ -58,6 +60,11 @@ namespace ControlEstudiantilSENATI
             {
                 e.Handled = true;
             }
+        }
+
+        private void Form_PinDeSeguridad_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
