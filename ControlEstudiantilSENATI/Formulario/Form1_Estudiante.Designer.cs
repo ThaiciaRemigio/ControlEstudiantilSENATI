@@ -540,9 +540,9 @@
             // dgvEstudiantes
             // 
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstudiantes.Location = new System.Drawing.Point(12, 485);
+            this.dgvEstudiantes.Location = new System.Drawing.Point(12, 500);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
-            this.dgvEstudiantes.Size = new System.Drawing.Size(1720, 182);
+            this.dgvEstudiantes.Size = new System.Drawing.Size(1346, 182);
             this.dgvEstudiantes.TabIndex = 3;
             this.dgvEstudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstudiantes_CellContentClick);
             // 
